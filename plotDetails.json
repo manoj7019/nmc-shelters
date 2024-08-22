@@ -1,0 +1,74 @@
+{
+    "plots" : [
+        {
+            "id": "flat1",
+            "title": "Hanging Gardens",
+            "img": "/card1.jpeg",
+            "location": "Nagawara, Bengaluru",
+            "school": "Amity University",
+            "hospital": "3km, Manipal",
+            "airport": "5km"
+        },
+        {
+            "id": "flat2",
+            "title": "Brij Town",
+            "img": "/card2.jpeg",
+            "location": "Devanahalli",
+            "school": "Harrow International",
+            "hospital": "4km, We Care",
+            "airport": "4km"
+        },
+        {
+            "id": "flat3",
+            "title": "RAK Felicity",
+            "img": "/card3.jpeg",
+            "location": "Devanahalli",
+            "school": "R L Jalappa IT",
+            "hospital": "2km, Manasa",
+            "airport": "6km"
+        },
+        {
+            "id": "flat4",
+            "title": "Deone Infrastructures",
+            "img": "/card4.jpeg",
+            "location": "Nelamangala",
+            "school": "Govt Primary",
+            "hospital": "10km, Manipal",
+            "airport": "2km"
+        }
+    ],
+    "facility" : [
+        {
+            "id" : "facility1",
+            "title": "Swimming Pool",
+            "img" : "/facility1.jpeg"
+        },
+        {
+            "id" : "facility2",
+            "title": "Gym",
+            "img" : "/facility2.jpeg"
+        },
+        {
+            "id" : "facility3",
+            "title": "Party Hall",
+            "img" : "/facility3.jpeg"
+        },
+        {
+            "id" : "facility4",
+            "title": "Playground",
+            "img" : "/facility4.jpeg"
+        },
+        {
+            "id" : "facility5",
+            "title": "Cafe",
+            "img" : "/facility5.jpeg"
+        }
+    ],
+    "proHighlights" : [
+        {
+            "id" : "highlight1",
+            "title": "Swimming Pool",
+            "img" : "/facility1.jpeg"
+        }
+    ]
+}
