@@ -13,20 +13,20 @@ const Navbar = () => {
             
       <div className='flex justify-between items-center gap-8'>
         <Link to='/'>
-            <p className='hover:text-red-500 hover:underline'>Services</p>
+            <p className='transition transform hover:text-red-500 hover:underline'>Services</p>
         </Link>
         <Link to='/choosePlot'>
-            <p className='hover:text-red-500 hover:underline'>Plots</p>
+            <p className='transition transform hover:text-red-500 hover:underline'>Plots</p>
         </Link>
         <Link to='/plotInfo'>
-            <p className='hover:text-red-500 hover:underline'>Blog</p>
+            <p className='transition transform hover:text-red-500 hover:underline'>Blog</p>
         </Link>
         <Link to='/about'>
-            <p className='hover:text-red-500 hover:underline'>About us</p>
+            <p className='transition transform hover:text-red-500 hover:underline'>About us</p>
         </Link>
 
         <Link to='/submit'> 
-            <p className='bg-red-500 py-2 px-5 rounded-3 text-white hover:text-red-500 hover:bg-white hover:shadow-md'>Contact Us</p>
+            <p className='transition transform bg-red-500 py-2 px-5 rounded-3 text-white hover:text-red-500 hover:bg-white hover:shadow-md'>Contact Us</p>
         </Link>
       </div>
     </div>

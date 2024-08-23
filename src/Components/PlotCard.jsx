@@ -5,17 +5,19 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import LocalHospitalOutlinedIcon from '@mui/icons-material/LocalHospitalOutlined';
 import LocalAirportOutlinedIcon from '@mui/icons-material/LocalAirportOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const PlotCard = () => {
   return (
-      <div className='grid grid-cols-4 gap-5'>
+      <div className='grid grid-cols-2 gap-7'>
       {Plots.plots.map(plot =>
       <Link to='/plotInfo'>
-      <div className='flex flex-col p-4 rounded-6 border-0.5 border-white bg-white shadow-xl gap-4 hover:scale-105'>
+      <div className='transition transform flex flex-col p-4 rounded-6 border-0.5 border-white bg-white shadow-xl gap-4 hover:scale-105'>
         <>
-            <img className='rounded-5' key={plot.id} src={plot.img} alt="" />
-            <div className='flex flex-col gap-2'>
+            <LazyLoadImage className='rounded-5' key={plot.id} src={plot.img} alt="" />
+            <div className='flex flex-col gap-3'>
                 <h3 className='text-6 font-bold'>{plot.title}</h3>
                 <div className='flex flex-col gap-2'>
                     <div className='flex items-center gap-1'>
@@ -36,6 +38,7 @@ const PlotCard = () => {
                         <SchoolOutlinedIcon fontSize='small'></SchoolOutlinedIcon>
                         <p>{plot.school}</p>
                     </div>
+                    <button className='flex justify-between items-center mt-3 bg-red-500 py-3 px-6 text-6 text-white rounded-bl-5 rounded-br-5 hover:scale-105 shadow-lg border-0.5 border-red-300'>Full Details <ArrowForwardOutlinedIcon></ArrowForwardOutlinedIcon></button>
                 </div>
             </div>
         </>

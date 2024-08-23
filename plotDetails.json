@@ -64,11 +64,207 @@
             "img" : "/facility5.jpeg"
         }
     ],
+
     "proHighlights" : [
         {
             "id" : "highlight1",
             "title": "Swimming Pool",
             "img" : "/facility1.jpeg"
+        }
+    ],
+
+    "salientFeatures" : [
+        {
+            "id" : "features1",
+            "title": "Great Amenities",
+            "img" : "/features1.gif"
+        },
+        {
+            "id" : "features2",
+            "title": "Vaastu Compliant",
+            "img" : "/features2.gif"
+        },
+        {
+            "id" : "features3",
+            "title": "Location advantages",
+            "img" : "/features3.gif"
+        },
+        {
+            "id" : "features4",
+            "title": "Ready to build Villa plots",
+            "img" : "/features4.gif"
+        },
+        {
+            "id" : "features5",
+            "title": "Transparent legal framework",
+            "img" : "/features5.gif"
+        },
+        {
+            "id" : "features6",
+            "title": "Serene Green Spaces",
+            "img" : "/features6.gif"
+        }
+    ],
+
+    "nmenclaveWork" : [
+        {
+            "id" : "work1",
+            "title" : "KIADB Park",
+            "time" : "24 min"
+        },
+        {
+            "id" : "work2",
+            "title" : "Kirloskar Business Park",
+            "time" : "25 min"
+        },
+        {
+            "id" : "work3",
+            "title" : "RMZ Latitude",
+            "time" : "27 min"
+        },
+        {
+            "id" : "work4",
+            "title" : "Brigade Opus",
+            "time" : "27 min"
+        },
+        {
+            "id" : "work5",
+            "title" : "Brigade Magnum",
+            "time" : "27 min"
+        },
+        {
+            "id" : "work6",
+            "title" : "Manyatha Tech Park",
+            "time" : "33 min"
+        }
+    ],
+
+    "nmenclaveConnectivity" : [
+        {
+            "id" : "connectivity1",
+            "title" : "Located on NH7",
+            "time" : "1 min"
+        },
+        {
+            "id" : "connectivity2",
+            "title" : "Airport Flyover",
+            "time" : "8 min"
+        },
+        {
+            "id" : "connectivity3",
+            "title" : "KIAL Airport",
+            "time" : "11 min"
+        },
+        {
+            "id" : "connectivity4",
+            "title" : "Hebbal Flyover",
+            "time" : "25 min"
+        },
+        {
+            "id" : "connectivity5",
+            "title" : "MG Road",
+            "time" : "45 min"
+        }
+    ],
+    "nmenclaveEducation" : [
+        {
+            "id" : "education1",
+            "title" : "Oxford English School",
+            "time" : "9 min"
+        },
+        {
+            "id" : "education2",
+            "title" : "Carmel English School",
+            "time" : "9 min"
+        },
+        {
+            "id" : "education3",
+            "title" : "NPS-NAFL",
+            "time" : "10 min"
+        },
+        {
+            "id" : "education4",
+            "title" : "Akash International School",
+            "time" : "5 min"
+        },
+        {
+            "id" : "education5",
+            "title" : "Vidhyashilp Academy",
+            "time" : "20 min"
+        },
+        {
+            "id" : "education6",
+            "title" : "Delhi Public School",
+            "time" : "30 min"
+        }
+    ],
+    "nmenclaveHealth" : [
+        {
+            "id" : "health1",
+            "title" : "Akash Multi Speciality Hospital",
+            "time" : "5 min"
+        },
+        {
+            "id" : "health2",
+            "title" : "Citecare Cancer Hospital",
+            "time" : "23 min"
+        },
+        {
+            "id" : "health3",
+            "title" : "Manipal Hospital",
+            "time" : "25 min"
+        },
+        {
+            "id" : "health4",
+            "title" : "Aster CMI Hospital",
+            "time" : "30 min"
+        },
+        {
+            "id" : "health5",
+            "title" : "Bangalore Baptist Hospital",
+            "time" : "33 min"
+        },
+        {
+            "id" : "health6",
+            "title" : "Ramaiah Leena Hospital",
+            "time" : "2 min"
+        }
+    ],
+    "nmenclaveEnt" : [
+        {
+            "id" : "ent1",
+            "title" : "Devanahalli Fort",
+            "time" : "5 min"
+        },
+        {
+            "id" : "ent2",
+            "title" : "Taj Hotel",
+            "time" : "15 min"
+        },
+        {
+            "id" : "ent3",
+            "title" : "RMZ Galleria",
+            "time" : "23 min"
+        },
+        {
+            "id" : "ent4",
+            "title" : "Esteem Mall",
+            "time" : "25 min"
+        },
+        {
+            "id" : "ent5",
+            "title" : "Prestige Plaza",
+            "time" : "29 min"
+        },
+        {
+            "id" : "ent6",
+            "title" : "Nandi Hills",
+            "time" : "35 min"
+        },
+        {
+            "id" : "ent7",
+            "title" : "Phoenix Mall of India",
+            "time" : "20 min"
         }
     ]
 }

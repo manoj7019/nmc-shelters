@@ -22,32 +22,38 @@ const Services = () => {
             </div>
             <div className='flex flex-col gap-4'>
                 <Link to='/choosePlot'>
-                    <div className='backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
                         <button>Property Marketing / Sales</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
                         <button>Property Buying</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
                         <button> Property Rent / Lease</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
                         <button>Property Development / Construction</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
                         <button>Property Management</button>
+                        <ArrowForwardOutlinedIcon />
+                    </div>
+                </Link>
+                <Link to='/choosePlot'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                        <button>Commercial Properties</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>

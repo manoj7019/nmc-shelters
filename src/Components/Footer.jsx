@@ -18,7 +18,7 @@ const Footer = () => {
                     <a href="" className='text-gray-400 hover:text-white'>
                         <LocationOnIcon fontSize='small'></LocationOnIcon>
                     </a>
-                    <p className='text-gray-400 hover:text-white'>
+                    <p className='transition transform text-gray-400 hover:text-white'>
                         1st floor, #516 Roshan Palace Apartments, 8th cross MCECHS layout, Dr. Shivramkaranth nagar, Sreerampura, Bengaluru, Karnataka - 560077
                     </p>
                 </div>
@@ -40,19 +40,19 @@ const Footer = () => {
             </div>
 
             <div className='flex flex-1 justify-center items-evenly gap-8'>
-                <a href="" className='text-gray-400 hover:text-white hover:scale-125'>
+                <a href="" className='transition transform text-gray-400 hover:text-white hover:scale-125'>
                     <FacebookIcon fontSize='large'></FacebookIcon>
                 </a>
-                <a href="" className='text-gray-400 hover:text-white hover:scale-125'>
+                <a href="" className='transition transform text-gray-400 hover:text-white hover:scale-125'>
                     <LinkedInIcon fontSize='large'></LinkedInIcon>
                 </a>
-                <a href="" className='text-gray-400 hover:text-white hover:scale-125'>
+                <a href="" className='transition transform text-gray-400 hover:text-white hover:scale-125'>
                     <InstagramIcon fontSize='large'></InstagramIcon>
                 </a>
-                <a href="" className='text-gray-400 hover:text-white hover:scale-125'>
+                <a href="" className='transition transform text-gray-400 hover:text-white hover:scale-125'>
                     <EmailIcon fontSize='large'></EmailIcon>
                 </a>
-                <a href="" className='text-gray-400 hover:text-white hover:scale-125'>
+                <a href="" className='transition transform text-gray-400 hover:text-white hover:scale-125'>
                     <WhatsAppIcon fontSize='large'></WhatsAppIcon>
                 </a>
             </div>
