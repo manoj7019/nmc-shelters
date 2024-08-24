@@ -10,6 +10,7 @@ import LocalHospitalOutlinedIcon from '@mui/icons-material/LocalHospitalOutlined
 import LocalAirportOutlinedIcon from '@mui/icons-material/LocalAirportOutlined';
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import CallRoundedIcon from '@mui/icons-material/CallRounded';
+import EmailIcon from '@mui/icons-material/Email';
 
 import WorkIcon from '@mui/icons-material/Work';
 import AirlineStopsIcon from '@mui/icons-material/AirlineStops';
@@ -54,6 +55,8 @@ import { useState, useEffect } from 'react'
 
 const PlotDetails = () => {
 
+    const linkClass = ({isActive}) => isActive ? 'flex bg-red-500' : 'flex'
+
     const [showMoreWork, setShowMoreWork] = useState(false)
     function handleSetShowMoreWork() {
         setShowMoreWork(!showMoreWork);
@@ -85,9 +88,9 @@ const PlotDetails = () => {
         <div className='flex p-7 gap-7 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl'>
             <div className='flex flex-col flex-1'>
                 {/* <img className='-mb-36 ml-28 z-50 h-30 w-auto border-l-4 border-b-4 border-gray-50 rounded-tl-7 rounded-bl-7 rounded-tr-7 hover:scale-105 shadow-xl' src={Plot1a} alt="" /> */}
-                <LazyLoadImage className='transition transform -mb-8 ml-11 mr-7 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot1a} alt="" />
-                <LazyLoadImage className='rounded-7 shadow-xl border-1' src={Plot1} alt="" />
-                <LazyLoadImage className='transition transform -mt-12 mr-13 -ml-8 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot2} alt="" />
+                <LazyLoadImage className='h-10 w-12 transition transform -mb-8 ml-11 mr-7 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot1a} alt="" />
+                <LazyLoadImage className='h-14 w-14 rounded-7 shadow-xl border-1' src={Plot1} alt="" />
+                <LazyLoadImage className='h-12 w-11 transition transform -mt-13 mr-13 -ml-9 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot2} alt="" />
             </div>
             <div className='flex flex-col justify-center gap-7 flex-1'>
                 <div className=''>
@@ -96,7 +99,7 @@ const PlotDetails = () => {
                 </div>
                 <div className='grid grid-cols-2 gap-6'>
                     <div className='flex flex-col gap-1'>
-                        <h1 className='text-red-500'>
+                        <h1 className='text-orange-500'>
                             <LocationOnOutlinedIcon fontSize='large'></LocationOnOutlinedIcon>
                         </h1>
                         <div>
@@ -105,7 +108,7 @@ const PlotDetails = () => {
                         </div>
                     </div>
                     <div className='flex flex-col gap-1'>
-                        <h1 className='text-red-500'>
+                        <h1 className='text-orange-500'>
                             <ApartmentIcon fontSize='large'></ApartmentIcon>
                         </h1>
                         <div>
@@ -114,7 +117,7 @@ const PlotDetails = () => {
                         </div>
                     </div>
                     <div className='flex flex-col gap-1'>
-                        <h1 className='text-red-500'>
+                        <h1 className='text-orange-500'>
                             <CurrencyRupeeIcon fontSize='large'></CurrencyRupeeIcon>
                         </h1>
                         <div>
@@ -123,7 +126,7 @@ const PlotDetails = () => {
                         </div>
                     </div>
                     <div className='flex flex-col gap-1'>
-                        <h1 className='text-red-500'>
+                        <h1 className='text-orange-500'>
                             <LocalAirportOutlinedIcon fontSize='large'></LocalAirportOutlinedIcon>
                         </h1>
                         <div>
@@ -134,7 +137,7 @@ const PlotDetails = () => {
                 </div>
                 <div className='flex gap-6'>
                     <Link to='/submit'>
-                        <button className='transition transform bg-red-500 py-4 px-6 text-6 text-white rounded-5 hover:scale-105 shadow-lg border-0.5 border-red-300'>Shoot an Email</button>
+                        <button className='transition transform flex items-center gap-2 bg-orange-500 py-4 px-6 text-6 text-white rounded-5 hover:scale-105 shadow-lg border-0.5 border-red-300'><EmailIcon></EmailIcon>Shoot an Email</button>
                     </Link>
                     <Link to='/submit'>
                         <button className='transition transform flex items-center gap-2 bg-gray-100 py-4 px-6 text-6 text-black rounded-5 border-0.5 border-white hover:scale-105 shadow-lg'> <CallRoundedIcon> </CallRoundedIcon> Book a Call</button>
@@ -159,7 +162,7 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 w-14'>
                         <div onClick={handleSetShowMoreWork}
-                         className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                            className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <WorkIcon fontSize='large' /> Work Locations </button>
                             <KeyboardArrowDownIcon />
@@ -180,7 +183,7 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 w-14'>
                     <div onClick={handleSetShowMoreConnectivity}
-                         className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <AirlineStopsIcon fontSize='large' /> Easy Connectivity </button>
                             <KeyboardArrowDownIcon />
@@ -201,7 +204,7 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 w-14'>
                         <div onClick={handleSetShowMoreEducation}
-                         className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <SchoolIcon fontSize='large' /> Educational Institutions </button>
                             <KeyboardArrowDownIcon />
@@ -222,7 +225,7 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 w-14'>
                         <div onClick={handleSetShowMoreHealth}
-                         className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <HealthAndSafetyIcon fontSize='large' /> Health Care </button>
                             <KeyboardArrowDownIcon />
@@ -243,7 +246,7 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 w-14'>
                         <div onClick={handleSetShowMoreEnt}
-                         className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <LandscapeIcon fontSize='large' /> Entertainment and Leisure </button>
                             <KeyboardArrowDownIcon />
@@ -373,7 +376,7 @@ const PlotDetails = () => {
         </div>
         <div className='flex gap-6 justify-center items-center pt-10'>
             <Link to='/submit'>
-                <button className='transition transform bg-red-500 py-4 px-6 text-6 text-white rounded-5 hover:scale-105 shadow-lg border-0.5 border-red-300'>Shoot an Email</button>
+                <button className='transition transform flex items-center gap-2 bg-orange-500 py-4 px-6 text-6 text-white rounded-5 hover:scale-105 shadow-lg border-0.5 border-red-300'><EmailIcon></EmailIcon>Shoot an Email</button>
             </Link>
             <Link to='/submit'>
                 <button className='transition transform flex items-center gap-2 bg-gray-100 py-4 px-6 text-6 text-black rounded-5 border-0.5 border-white hover:scale-105 shadow-lg'> <CallRoundedIcon> </CallRoundedIcon> Book a Call</button>

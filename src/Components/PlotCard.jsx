@@ -16,29 +16,29 @@ const PlotCard = () => {
       <Link to='/plotInfo'>
       <div className='transition transform flex flex-col p-4 rounded-6 border-0.5 border-white bg-white shadow-xl gap-4 hover:scale-105'>
         <>
-            <LazyLoadImage className='rounded-5' key={plot.id} src={plot.img} alt="" />
+            <LazyLoadImage className='rounded-5 w-13 h-12' key={plot.id} src={plot.img} alt="" />
             <div className='flex flex-col gap-3'>
                 <h3 className='text-6 font-bold'>{plot.title}</h3>
                 <div className='flex flex-col gap-2'>
                     <div className='flex items-center gap-1'>
-                        <LocationOnOutlinedIcon fontSize='small'></LocationOnOutlinedIcon>
+                        <LocationOnOutlinedIcon className='opacity-60' fontSize='small'></LocationOnOutlinedIcon>
                         <p>{plot.location}</p>
                     </div>
                     <div className='flex gap-2'>
                         <div className='flex items-center gap-1'>
-                            <LocalHospitalOutlinedIcon fontSize='small'></LocalHospitalOutlinedIcon>
+                            <LocalHospitalOutlinedIcon className='opacity-60' fontSize='small'></LocalHospitalOutlinedIcon>
                             <p>{plot.hospital}</p>
                         </div>
                         <div className='flex items-center gap-1'>
-                            <LocalAirportOutlinedIcon fontSize='small'></LocalAirportOutlinedIcon>
+                            <LocalAirportOutlinedIcon className='opacity-60' fontSize='small'></LocalAirportOutlinedIcon>
                             <p>{plot.airport}</p>
                         </div>
                     </div>
                     <div className='flex items-center gap-1'>
-                        <SchoolOutlinedIcon fontSize='small'></SchoolOutlinedIcon>
+                        <SchoolOutlinedIcon className='opacity-60' fontSize='small'></SchoolOutlinedIcon>
                         <p>{plot.school}</p>
                     </div>
-                    <button className='flex justify-between items-center mt-3 bg-red-500 py-3 px-6 text-6 text-white rounded-bl-5 rounded-br-5 hover:scale-105 shadow-lg border-0.5 border-red-300'>Full Details <ArrowForwardOutlinedIcon></ArrowForwardOutlinedIcon></button>
+                    <button className='flex justify-between items-center mt-3 bg-orange-500 py-3 px-6 text-6 text-white rounded-bl-5 rounded-br-5 hover:scale-105 shadow-lg border-0.5 border-red-300'>Full Details <ArrowForwardOutlinedIcon></ArrowForwardOutlinedIcon></button>
                 </div>
             </div>
         </>

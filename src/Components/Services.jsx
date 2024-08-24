@@ -12,6 +12,7 @@ import HeroImg8 from '/hero8.avif'
 import HeroImg9 from '/hero9.jpg'
 import HeroImg10 from '/hero10.avif'
 import HeroImg11 from '/hero11.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Services = () => {
   return (
@@ -22,37 +23,37 @@ const Services = () => {
             </div>
             <div className='flex flex-col gap-4'>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Property Marketing / Sales</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Property Buying</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button> Property Rent / Lease</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Property Development / Construction</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Property Management</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-red-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Commercial Properties</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
@@ -61,17 +62,17 @@ const Services = () => {
         </div>
         <div className='flex items-center flex-1 gap-4 p-5'>
             <div className='flex flex-col gap-4'>
-                <img className='rounded-5 shadow-xl border-1 border-white' src={HeroImg10} alt="" />
-                <img className='rounded-5 shadow-xl border-1 border-white' src={HeroImg9} alt="" />
+                <LazyLoadImage className='w-11 h-11 rounded-5 shadow-xl border-1 border-white' src={HeroImg10} alt="" />
+                <LazyLoadImage className='w-11 h-11 rounded-5 shadow-xl border-1 border-white' src={HeroImg9} alt="" />
             </div>
             <div className='flex flex-col gap-4'>
-                <img className='rounded-5 shadow-xl border-1 border-white' src={HeroImg4} alt="" />
-                <img className='rounded-5 shadow-xl border-1 border-white' src={HeroImg5} alt="" />
-                <img className='rounded-5 shadow-xl border-1 border-white' src={HeroImg6} alt="" />
+                <LazyLoadImage className='w-11 h-11 rounded-5 shadow-xl border-1 border-white' src={HeroImg4} alt="" />
+                <LazyLoadImage className='w-11 h-11 rounded-5 shadow-xl border-1 border-white' src={HeroImg5} alt="" />
+                <LazyLoadImage className='w-11 h-11 rounded-5 shadow-xl border-1 border-white' src={HeroImg6} alt="" />
             </div>
             <div className='flex flex-col gap-4'>
-                <img className='rounded-5 shadow-xl border-1 border-white' src={HeroImg11} alt="" />
-                <img className='rounded-5 shadow-xl border-1 border-white' src={HeroImg8} alt="" />
+                <LazyLoadImage className='w-11 h-11 rounded-5 shadow-xl border-1 border-white' src={HeroImg11} alt="" />
+                <LazyLoadImage className='w-11 h-11 rounded-5 shadow-xl border-1 border-white' src={HeroImg8} alt="" />
             </div>
         </div>
     </div>

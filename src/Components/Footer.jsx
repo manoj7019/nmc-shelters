@@ -10,15 +10,15 @@ import LogoW from '/logowhite.png'
 const Footer = () => {
   return (
     <div className=''>
-        <div className='flex bg-black p-8 justify-between items-center gap-4'>
+        <div className='flex bg-indigo-950 p-8 justify-between items-center gap-4'>
             {/* <h1 className='text-white text-8'>Social for all latest updates.</h1> */}
             <div className='flex flex-1 flex-col items-start gap-3'>
                 <img className='h-7' src={LogoW} alt="" />
                 <div className='flex gap-1'>
-                    <a href="" className='text-gray-400 hover:text-white'>
+                    <a href="" className='transition transform hover:scale-125 text-gray-400 hover:text-white'>
                         <LocationOnIcon fontSize='small'></LocationOnIcon>
                     </a>
-                    <p className='transition transform text-gray-400 hover:text-white'>
+                    <p className='transition transform hover:underline text-gray-400 hover:text-white'>
                         1st floor, #516 Roshan Palace Apartments, 8th cross MCECHS layout, Dr. Shivramkaranth nagar, Sreerampura, Bengaluru, Karnataka - 560077
                     </p>
                 </div>
@@ -26,16 +26,16 @@ const Footer = () => {
 
             <div className='flex flex-1 flex-col items-center gap-3'>
                 <a href="">
-                    <p className='hover:text-white text-gray-400'>Services</p>
+                    <p className='transition transform hover:scale-125 hover:text-white text-gray-400'>Services</p>
                 </a>
                 <a href="">
-                    <p className='hover:text-white text-gray-400'>Plots</p>
+                    <p className='transition transform hover:scale-125 hover:text-white text-gray-400'>Plots</p>
                 </a>
                 <a href="">
-                    <p className='hover:text-white text-gray-400'>Blog</p>
+                    <p className='transition transform hover:scale-125 hover:text-white text-gray-400'>Blog</p>
                 </a>
                 <a href="">
-                    <p className='hover:text-white text-gray-400'>About us</p>
+                    <p className='transition transform hover:scale-125 hover:text-white text-gray-400'>About us</p>
                 </a>
             </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
                 </a>
             </div>
         </div>
-        <p className='text-center bg-black text-gray-400 p-2 border-t-0.5 border-gray-700'>
+        <p className='text-center bg-indigo-950 text-gray-400 p-2 border-t-0.5 border-gray-700'>
             &copy; 2024 Namochetana India Pvt. Ltd. All rights reserved.
         </p>
     </div>

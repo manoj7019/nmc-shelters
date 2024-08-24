@@ -58,7 +58,7 @@ const QuerySubmit = () => {
             <div className='flex flex-col gap-4 w-14 mt-8 p-6 rounded-4 shadow-xl bg-white'>
             <h1>Get in Touch with us.</h1>
             <input required
-                className='border-0.5 h-7 p-3 rounded-2'
+                className='transition transform border-0.5 hover:border-orange-500 hover:scale-105 h-7 p-3 rounded-2'
                 placeholder='Name'
                 name='FullName' 
                 value={user.FullName}
@@ -67,7 +67,7 @@ const QuerySubmit = () => {
                 onChange={data}
             />
             <input required
-                className='border-0.5 h-7 p-3 rounded-2'
+                className='transition transform border-0.5 hover:border-orange-500 hover:scale-105 h-7 p-3 rounded-2'
                 placeholder='Phone Number'
                 name='Phone' 
                 value={user.Phone}
@@ -76,7 +76,7 @@ const QuerySubmit = () => {
                 onChange={data}
             />
             <input required
-                className='border-0.5 h-7 p-3 rounded-2'
+                className='transition transform border-0.5 hover:border-orange-500 hover:scale-105 h-7 p-3 rounded-2'
                 placeholder='Email'
                 name='Email' 
                 value={user.Email}
@@ -85,15 +85,15 @@ const QuerySubmit = () => {
                 onChange={data}
             />
             <textarea
-                className='border-0.5 h-9 p-3 rounded-2'
+                className='transition transform border-0.5 hover:border-orange-500 hover:scale-105 h-9 p-3 rounded-2'
                 placeholder='Message'
                 name='Message' 
                 value={user.Message}
                 onChange={data}
             />
-            <div className='flex items-center gap-2 accent-red-500'>
+            <div className='flex items-center gap-2 accent-orange-600'>
                 <input 
-                    className='h-4 w-4'
+                    className='transition transform border-0.5 hover:border-orange-500 hover:scale-105 h-4 w-4'
                     type="checkbox" 
                     name="" 
                     id="" 
@@ -103,7 +103,7 @@ const QuerySubmit = () => {
                 <p>Subscribe to the latest Real Estate updates</p>
             </div>
             <button
-             className='transition transform bg-red-500 mt-5 py-2 px-6 text-6 text-white rounded-3 hover:scale-105 shadow-lg border-0.5 border-red-300'>Submit</button>
+             className='transition transform bg-orange-500 mt-5 py-2 px-6 text-6 text-white rounded-3 hover:scale-105 shadow-lg border-0.5 border-red-300'>Submit</button>
             </div>
         </form>
     </div>
