@@ -4,7 +4,7 @@ import PlotDetails from '../../plotDetails.json'
 const SalientFeatures = () => {
   return (
     <div className='sticky top-0 py-3 rounded-6'>
-        <h1 className='text-7 my-5'>Salient Features</h1>
+        <h1 className='text-7 font-medium mobile:text-center laptop:text-left my-5'>Salient Features</h1>
         <div className='grid grid-cols-2 gap-6'>
         {PlotDetails.salientFeatures.map(salientFeature => 
             <div className='flex flex-col items-center'>

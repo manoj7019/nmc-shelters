@@ -6,6 +6,17 @@ export default {
   ],
   theme: {
     extend: {},
+    screens: {
+      'mobile': '320px',
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
     width: {
       '1': '4px',
       '2': '8px',
@@ -19,10 +30,12 @@ export default {
       '10': '128px',
       '11': '192px',
       '12': '256px',
+      '12m': '320px',
       '13': '384px',
       '14': '512px',
       '15': '640px',
       '16': '768px',
+      'full': '100%'
     },
     height: {
       '1': '4px',

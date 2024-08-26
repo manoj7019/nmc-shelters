@@ -11,7 +11,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const PlotCard = () => {
   return (
-      <div className='grid grid-cols-2 gap-7'>
+      <div className='grid laptop:grid-cols-2 mobile:grid-cols-1 gap-7'>
       {Plots.plots.map(plot =>
       <Link to='/plotInfo'>
       <div className='transition transform flex flex-col p-4 rounded-6 border-0.5 border-white bg-white shadow-xl gap-4 hover:scale-105'>

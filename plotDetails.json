@@ -40,7 +40,7 @@
     "facility" : [
         {
             "id" : "facility1",
-            "title": "Swimming Pool",
+            "title": "Pool",
             "img" : "/facility1.jpeg"
         },
         {

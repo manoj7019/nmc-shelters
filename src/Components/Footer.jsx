@@ -8,23 +8,26 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LogoW from '/logowhite.png'
 
 const Footer = () => {
+    const year = new Date().getFullYear()
+    console.log(year)
+
   return (
     <div className=''>
-        <div className='flex bg-indigo-950 p-8 justify-between items-center gap-4'>
+        <div className='flex laptop:flex-row mobile:flex-col bg-indigo-950 p-8 justify-between items-center laptop:gap-4 mobile:gap-6'>
             {/* <h1 className='text-white text-8'>Social for all latest updates.</h1> */}
-            <div className='flex flex-1 flex-col items-start gap-3'>
+            <div className='flex flex-1 flex-col laptop:items-start mobile:items-center gap-3'>
                 <img className='h-7' src={LogoW} alt="" />
                 <div className='flex gap-1'>
-                    <a href="" className='transition transform hover:scale-125 text-gray-400 hover:text-white'>
-                        <LocationOnIcon fontSize='small'></LocationOnIcon>
-                    </a>
-                    <p className='transition transform hover:underline text-gray-400 hover:text-white'>
+                    <a href="" className='transition transform text-gray-400 hover:text-white'>
+                        {/* <LocationOnIcon className='hidden' fontSize='small'></LocationOnIcon> */}
+                    <p className='transition transform hover:underline text-gray-400 hover:text-white laptop:text-left mobile:text-center mobile:p-0'>
                         1st floor, #516 Roshan Palace Apartments, 8th cross MCECHS layout, Dr. Shivramkaranth nagar, Sreerampura, Bengaluru, Karnataka - 560077
                     </p>
+                    </a>
                 </div>
             </div>
 
-            <div className='flex flex-1 flex-col items-center gap-3'>
+            <div className='flex flex-1 laptop:flex-col mobile:flex-row items-center gap-3'>
                 <a href="">
                     <p className='transition transform hover:scale-125 hover:text-white text-gray-400'>Services</p>
                 </a>
@@ -39,7 +42,7 @@ const Footer = () => {
                 </a>
             </div>
 
-            <div className='flex flex-1 justify-center items-evenly gap-8'>
+            <div className='flex flex-1 justify-center items-evenly laptop:gap-8 mobile:gap-6'>
                 <a href="" className='transition transform text-gray-400 hover:text-white hover:scale-125'>
                     <FacebookIcon fontSize='large'></FacebookIcon>
                 </a>
@@ -58,7 +61,7 @@ const Footer = () => {
             </div>
         </div>
         <p className='text-center bg-indigo-950 text-gray-400 p-2 border-t-0.5 border-gray-700'>
-            &copy; 2024 Namochetana India Pvt. Ltd. All rights reserved.
+            &copy; {year} Namochetana India Pvt. Ltd. All rights reserved.
         </p>
     </div>
   )

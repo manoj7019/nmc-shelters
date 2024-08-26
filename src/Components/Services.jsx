@@ -16,51 +16,51 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Services = () => {
   return (
-    <div className='bg-[url("/seamless.png")] flex items-center p-10 gap-9 shadow-xl pt-10'>
+    <div className='bg-[url("/seamless.png")] flex mobile:flex-col laptop:flex-row items-center laptop:p-10 mobile:p-4 gap-9 shadow-xl mobile:py-10'>
         <div className='flex flex-col gap-7 flex-1'>
             <div className=''>
-                <h1 className='text-9'>What you looking for?</h1>
+                <h1 className='laptop:text-9 mobile:text-8 laptop:text-left mobile:text-center'>What you looking for?</h1>
             </div>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4 mobile:w-13 laptop:w-14'>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-5 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Property Marketing / Sales</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-5 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Property Buying</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-5 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button> Property Rent / Lease</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-5 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Property Development / Construction</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-5 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Property Management</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
                 <Link to='/choosePlot'>
-                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                    <div className='transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-5 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                         <button>Commercial Properties</button>
                         <ArrowForwardOutlinedIcon />
                     </div>
                 </Link>
             </div>
         </div>
-        <div className='flex items-center flex-1 gap-4 p-5'>
+        <div className='mobile:hidden laptop:flex items-center flex-1 gap-4 p-5'>
             <div className='flex flex-col gap-4'>
                 <LazyLoadImage className='w-11 h-11 rounded-5 shadow-xl border-1 border-white' src={HeroImg10} alt="" />
                 <LazyLoadImage className='w-11 h-11 rounded-5 shadow-xl border-1 border-white' src={HeroImg9} alt="" />

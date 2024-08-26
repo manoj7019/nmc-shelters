@@ -83,14 +83,14 @@ const PlotDetails = () => {
     }
 
   return (
-    <div className='bg-[url("/seamless.png")] p-10'>
+    <div className='bg-[url("/seamless.png")] laptop:p-10 mobile:p-4 mobile:py-10'>
         {/* <div className='flex p-7 gap-7 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl bg-gray-50 shadow-xl'> */}
-        <div className='flex p-7 gap-7 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl'>
+        <div className='flex laptop:flex-row mobile:flex-col laptop:p-7 mobile:p-4 gap-7 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl'>
             <div className='flex flex-col flex-1'>
                 {/* <img className='-mb-36 ml-28 z-50 h-30 w-auto border-l-4 border-b-4 border-gray-50 rounded-tl-7 rounded-bl-7 rounded-tr-7 hover:scale-105 shadow-xl' src={Plot1a} alt="" /> */}
-                <LazyLoadImage className='h-10 w-12 transition transform -mb-8 ml-11 mr-7 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot1a} alt="" />
+                {/* <LazyLoadImage className='h-10 w-12 transition transform -mb-8 ml-11 mr-7 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot1a} alt="" /> */}
                 <LazyLoadImage className='h-14 w-14 rounded-7 shadow-xl border-1' src={Plot1} alt="" />
-                <LazyLoadImage className='h-12 w-11 transition transform -mt-13 mr-13 -ml-9 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot2} alt="" />
+                {/* <LazyLoadImage className='h-11 w-11 transition transform -mt-13 mr-13 -ml-9 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot2} alt="" /> */}
             </div>
             <div className='flex flex-col justify-center gap-7 flex-1'>
                 <div className=''>
@@ -103,7 +103,7 @@ const PlotDetails = () => {
                             <LocationOnOutlinedIcon fontSize='large'></LocationOnOutlinedIcon>
                         </h1>
                         <div>
-                            <h2 className='text-5'>Nagawara</h2>
+                            <h2 className='text-5'>Nagawara, Bengaluru</h2>
                             <p className='text-4 text-gray-500'>Lorem ipsum dolor, sit amet consectetur.</p>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ const PlotDetails = () => {
                             <ApartmentIcon fontSize='large'></ApartmentIcon>
                         </h1>
                         <div>
-                            <h2 className='text-5'>50 - 60 Flats</h2>
+                            <h2 className='text-5'>50 - 60 <br />Flats</h2>
                             <p className='text-4 text-gray-500'>Lorem ipsum dolor, sit amet consectetur.</p>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ const PlotDetails = () => {
                             <CurrencyRupeeIcon fontSize='large'></CurrencyRupeeIcon>
                         </h1>
                         <div>
-                            <h2 className='text-5'>3.25Cr Onwards</h2>
+                            <h2 className='text-5'>3.25Cr <br />Onwards</h2>
                             <p className='text-4 text-gray-500'>Lorem ipsum dolor, sit amet consectetur.</p>
                         </div>
                     </div>
@@ -135,7 +135,7 @@ const PlotDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex gap-6'>
+                <div className='flex laptop:flex-row mobile:flex-col gap-6'>
                     <Link to='/submit'>
                         <button className='transition transform flex items-center gap-2 bg-orange-500 py-4 px-6 text-6 text-white rounded-5 hover:scale-105 shadow-lg border-0.5 border-red-300'><EmailIcon></EmailIcon>Shoot an Email</button>
                     </Link>
@@ -145,9 +145,9 @@ const PlotDetails = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col items-center gap-8 mt-9'>
-            <h1 className='text-9'>Club House Highlights</h1>
-            <div className='grid grid-cols-5 gap-6'>
+        <div className='flex flex-col items-center gap-8 mt-9 mobile:p-4'>
+            <h1 className='laptop:text-9 mobile:text-8'>Club House Highlights</h1>
+            <div className='grid laptop:grid-cols-5 mobile:grid-cols-2 gap-6'>
             {Plots.facility.map(facility =>
                 <div className='flex flex-col items-center transition transform hover:scale-110'>
                     <img className='shadow-lg border-0.5 border-white rounded-5' src={facility.img} alt="" />
@@ -156,13 +156,13 @@ const PlotDetails = () => {
             )}
             </div>
         </div>
-        <div className='flex justify-between px-10 mt-6'>
+        <div className='flex laptop:flex-row mobile:flex-col justify-between laptop:px-10 mobile:px-4 mt-6'>
             <div className='flex flex-col gap-6 mt-9'>
                 <h1 className='text-8'>Project Highlights</h1>
                 <div>
-                    <div className='flex flex-col gap-4 w-14'>
+                    <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                         <div onClick={handleSetShowMoreWork}
-                            className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                            className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <WorkIcon fontSize='large' /> Work Locations </button>
                             <KeyboardArrowDownIcon />
@@ -171,8 +171,8 @@ const PlotDetails = () => {
                         <>
                             {Plots.nmenclaveWork.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
-                                    <p className='text-6'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time} drive</p>
+                                    <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
+                                    <p className='text-4 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>
@@ -181,9 +181,9 @@ const PlotDetails = () => {
                 </div>
 
                 <div>
-                    <div className='flex flex-col gap-4 w-14'>
+                    <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                     <div onClick={handleSetShowMoreConnectivity}
-                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <AirlineStopsIcon fontSize='large' /> Easy Connectivity </button>
                             <KeyboardArrowDownIcon />
@@ -192,8 +192,8 @@ const PlotDetails = () => {
                         <>
                             {Plots.nmenclaveConnectivity.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
-                                    <p className='text-6'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time} drive</p>
+                                    <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
+                                    <p className='text-4 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>
@@ -202,9 +202,9 @@ const PlotDetails = () => {
                 </div>
 
                 <div>
-                    <div className='flex flex-col gap-4 w-14'>
+                    <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                         <div onClick={handleSetShowMoreEducation}
-                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <SchoolIcon fontSize='large' /> Educational Institutions </button>
                             <KeyboardArrowDownIcon />
@@ -213,8 +213,8 @@ const PlotDetails = () => {
                         <>
                             {Plots.nmenclaveEducation.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
-                                    <p className='text-6'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time} drive</p>
+                                    <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
+                                    <p className='text-4 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>
@@ -223,9 +223,9 @@ const PlotDetails = () => {
                 </div>
 
                 <div>
-                    <div className='flex flex-col gap-4 w-14'>
+                    <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                         <div onClick={handleSetShowMoreHealth}
-                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <HealthAndSafetyIcon fontSize='large' /> Health Care </button>
                             <KeyboardArrowDownIcon />
@@ -234,8 +234,8 @@ const PlotDetails = () => {
                         <>
                             {Plots.nmenclaveHealth.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
-                                    <p className='text-6'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time} drive</p>
+                                    <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
+                                    <p className='text-4 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>
@@ -244,9 +244,9 @@ const PlotDetails = () => {
                 </div>
 
                 <div>
-                    <div className='flex flex-col gap-4 w-14'>
+                    <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                         <div onClick={handleSetShowMoreEnt}
-                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 text-6 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <LandscapeIcon fontSize='large' /> Entertainment and Leisure </button>
                             <KeyboardArrowDownIcon />
@@ -255,8 +255,8 @@ const PlotDetails = () => {
                         <>
                             {Plots.nmenclaveEnt.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
-                                    <p className='text-6'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time} drive</p>
+                                    <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
+                                    <p className='text-4 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>
@@ -374,7 +374,7 @@ const PlotDetails = () => {
                 </div>
             </div>
         </div>
-        <div className='flex gap-6 justify-center items-center pt-10'>
+        <div className='flex laptop:flex-row mobile:flex-col gap-6 justify-center items-center laptop:pt-10 mobile:pt-9'>
             <Link to='/submit'>
                 <button className='transition transform flex items-center gap-2 bg-orange-500 py-4 px-6 text-6 text-white rounded-5 hover:scale-105 shadow-lg border-0.5 border-red-300'><EmailIcon></EmailIcon>Shoot an Email</button>
             </Link>

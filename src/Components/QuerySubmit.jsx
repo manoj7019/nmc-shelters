@@ -52,10 +52,10 @@ const QuerySubmit = () => {
     
   return (
     <>
-    <div className='bg-[url("/seamless.png")] flex flex-col gap-6 justify-center items-center p-9'>
+    <div className='bg-[url("/seamless.png")] flex flex-col gap-6 justify-center items-center laptop:p-9 mobile:p-4 mobile:py-8'>
         {/* <h1 className='text-8'>Get in Touch with us.</h1> */}
         <form action="/success" onSubmit={getData}>
-            <div className='flex flex-col gap-4 w-14 mt-8 p-6 rounded-4 shadow-xl bg-white'>
+            <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full mt-8 laptop:p-6 mobile:p-4 rounded-4 shadow-xl bg-white'>
             <h1>Get in Touch with us.</h1>
             <input required
                 className='transition transform border-0.5 hover:border-orange-500 hover:scale-105 h-7 p-3 rounded-2'
