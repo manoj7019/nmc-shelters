@@ -37,10 +37,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='top-0 inset-x-0 fixed z-50 flex justify-between items-center p-3 px-5 bg-gray-50/80 backdrop-blur'>
+      <div className='top-0 inset-x-0 fixed z-50 flex justify-between items-center p-4 px-5 bg-gray-50/80 backdrop-blur'>
           <NavLink to='/'>
               <div className='transition transform hover:scale-110 flex items-end'>
-                  <img className='h-8' src={Logo} alt="" />
+                  <img className='laptop:h-8 mobile:h-7' src={Logo} alt="" />
               </div>
           </NavLink>
 
@@ -73,21 +73,21 @@ const Navbar = () => {
   {showDropdown && 
               <div className='laptop:hidden mobile:absolute min-h-[100vh] left-0 top-[100%] w-full px-1'>
                   {/* <div className='flex flex-col flex-8 justify-between items-center bg-gray-50 gap-10 px-5 py-8 rounded-b-lg mx-2 z-50'> */}
-                  <div className='flex flex-col justify-between items-center gap-7 px-5 py-6 rounded-b-5 mx-2 z-50 bg-gray-50'>
+                  <div className='flex flex-col justify-between items-center gap-6 px-5 py-6 rounded-b-5 mx-2 z-50 bg-gray-50'>
                       <NavLink to='/' onClick={handleSetShowDropdown} className='flex items-center gap-1 px-4'>
-                          <button className='text-7 flex items-center gap-2'>Services</button>
+                          <button className='text-6 flex items-center gap-2'>Services</button>
                       </NavLink>
                       <NavLink to='/choosePlot' onClick={handleSetShowDropdown} className='flex items-center gap-1 px-4'>
-                          <button className='text-7 flex items-center gap-2'>Plots</button>
+                          <button className='text-6 flex items-center gap-2'>Plots</button>
                       </NavLink>
                       <NavLink to='/plotInfo' onClick={handleSetShowDropdown} className='flex items-center gap-1 px-4'>
-                          <button className='text-7 flex items-center gap-2'>Blog</button>
+                          <button className='text-6 flex items-center gap-2'>Blog</button>
                       </NavLink>
                       <NavLink to='/about' onClick={handleSetShowDropdown} className='flex items-center gap-1 px-4'>
-                          <button className='text-7 flex items-center gap-2'>About us</button>
+                          <button className='text-6 flex items-center gap-2'>About us</button>
                       </NavLink>
-                      <NavLink to='/submit' onClick={handleSetShowDropdown} className='bg-orange-500 text-7 text-white py-4 px-9 rounded-5'>
-                          <button>Contact me</button>
+                      <NavLink to='/submit' onClick={handleSetShowDropdown} className='bg-orange-500 text-6 text-white py-4 px-9 rounded-5'>
+                          <button>Contact us</button>
                       </NavLink>
                   </div>
               </div>
