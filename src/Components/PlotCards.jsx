@@ -6,7 +6,7 @@ import SalientFeatures from './SalientFeatures'
 const PlotCards = () => {
 
   return (
-    <div className='bg-[url("/seamless.png")] flex flex-col items-center gap-8 laptop:p-10 mobile:p-4 mobile:pt-10 bg-gray-50 shadow-md'>
+    <div className='bg-[url("/seamless.png")] flex flex-col items-center gap-8 laptop:p-10 mobile:p-4 mobile:py-9 bg-gray-50 shadow-md'>
         {/* <div className='flex flex-col text-center gap-4'>
             <h1 className='text-9'>Please Choose your Plot Below</h1>
             <p className='text-6 px-11 text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore ipsam obcaecati ad consequuntur quis porro ex facere, nemo deserunt!</p>

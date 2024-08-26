@@ -83,7 +83,7 @@ const PlotDetails = () => {
     }
 
   return (
-    <div className='bg-[url("/seamless.png")] laptop:p-10 mobile:p-4 mobile:py-10'>
+    <div className='bg-[url("/seamless.png")] laptop:p-10 mobile:p-4 mobile:py-9'>
         {/* <div className='flex p-7 gap-7 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl bg-gray-50 shadow-xl'> */}
         <div className='flex laptop:flex-row mobile:flex-col laptop:p-7 mobile:p-4 gap-7 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl'>
             <div className='flex flex-col flex-1'>
@@ -145,7 +145,7 @@ const PlotDetails = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col items-center gap-8 mt-9 mobile:p-4'>
+        <div className='flex flex-col items-center gap-7 mt-9 mobile:p-4'>
             <h1 className='laptop:text-9 mobile:text-8'>Club House Highlights</h1>
             <div className='grid laptop:grid-cols-5 mobile:grid-cols-2 gap-6'>
             {Plots.facility.map(facility =>
@@ -248,7 +248,7 @@ const PlotDetails = () => {
                         <div onClick={handleSetShowMoreEnt}
                          className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
-                            <LandscapeIcon fontSize='large' /> Entertainment and Leisure </button>
+                            <LandscapeIcon fontSize='large' /> Entertainment</button>
                             <KeyboardArrowDownIcon />
                         </div>
                         {showMoreEnt && 
