@@ -16,8 +16,8 @@ const PlotCards = () => {
           <a href=""><button className='bg-gray-100 py-4 px-6 text-6 rounded-5 hover:scale-105 shadow-lg hover:bg-red-500 hover:text-white'>Doddaballapur</button></a>
         </div> */}
         <div className='flex laptop:flex-row mobile:flex-col laptop:gap-10 mobile:gap-5'>
-          <div className='flex flex-col gap-6'>
-            <div className='flex flex-col'>
+          <div className='flex flex-col laptop:gap-6 mobile:gap-4'>
+            <div className='flex flex-col mobile:p-2'>
               <h1 className='laptop:text-9 font-medium mobile:text-8 mobile:pr-8'>Please Choose your Plot Below</h1>
               <p className='text-6 py-4 text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore ipsam obcaecati ad consequuntur quis porro ex facere, nemo deserunt!</p>
             </div>

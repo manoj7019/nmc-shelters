@@ -85,14 +85,14 @@ const PlotDetails = () => {
   return (
     <div className='bg-[url("/seamless.png")] laptop:p-10 mobile:p-4 mobile:py-9'>
         {/* <div className='flex p-7 gap-7 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl bg-gray-50 shadow-xl'> */}
-        <div className='flex laptop:flex-row mobile:flex-col laptop:p-7 mobile:p-4 gap-7 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl'>
+        <div className='flex laptop:flex-row mobile:flex-col laptop:p-7 mobile:p-4 laptop:gap-7 mobile:gap-6 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl'>
             <div className='flex flex-col flex-1'>
                 {/* <img className='-mb-36 ml-28 z-50 h-30 w-auto border-l-4 border-b-4 border-gray-50 rounded-tl-7 rounded-bl-7 rounded-tr-7 hover:scale-105 shadow-xl' src={Plot1a} alt="" /> */}
                 {/* <LazyLoadImage className='h-10 w-12 transition transform -mb-8 ml-11 mr-7 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot1a} alt="" /> */}
-                <LazyLoadImage className='h-14 w-14 rounded-7 shadow-xl border-1' src={Plot1} alt="" />
+                <LazyLoadImage className='h-13 w-14 rounded-7 shadow-xl border-1' src={Plot1} alt="" />
                 {/* <LazyLoadImage className='h-11 w-11 transition transform -mt-13 mr-13 -ml-9 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot2} alt="" /> */}
             </div>
-            <div className='flex flex-col justify-center gap-7 flex-1'>
+            <div className='flex flex-col justify-center laptop:gap-7 mobile:gap-6 flex-1'>
                 <div className=''>
                     <h1 className='text-8'>Hanging Gardens</h1>
                     <p className='text-5 text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis maiores quibusdam, explicabo molestiae dicta quam.</p>
@@ -135,7 +135,7 @@ const PlotDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex laptop:flex-row mobile:flex-col gap-6'>
+                <div className='flex laptop:flex-row mobile:flex-col laptop:gap-6 mobile:gap-4'>
                     <Link to='/submit'>
                         <button className='transition transform flex items-center gap-2 bg-orange-500 py-4 px-6 text-6 text-white rounded-5 hover:scale-105 shadow-lg border-0.5 border-red-300'><EmailIcon></EmailIcon>Shoot an Email</button>
                     </Link>
@@ -145,7 +145,7 @@ const PlotDetails = () => {
                 </div>
             </div>
         </div>
-        <div className='flex flex-col items-center gap-7 mt-9 mobile:p-4'>
+        <div className='flex flex-col items-center laptop:gap-7 mobile:gap-5 laptop:mt-9 mobile:mt-6 mobile:p-4'>
             <h1 className='laptop:text-9 mobile:text-8'>Club House Highlights</h1>
             <div className='grid laptop:grid-cols-5 mobile:grid-cols-2 gap-6'>
             {Plots.facility.map(facility =>
@@ -157,7 +157,7 @@ const PlotDetails = () => {
             </div>
         </div>
         <div className='flex laptop:flex-row mobile:flex-col justify-between laptop:px-10 mobile:px-4 mt-6'>
-            <div className='flex flex-col gap-6 mt-9'>
+            <div className='flex flex-col gap-6 laptop:mt-9 mobile:mt-6'>
                 <h1 className='text-8'>Project Highlights</h1>
                 <div>
                     <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
@@ -308,7 +308,7 @@ const PlotDetails = () => {
                 </div> */}
             </div>
             
-            <div className='flex flex-col gap-6 mt-9'>
+            <div className='flex flex-col gap-6 laptop:mt-9 mobile:mt-7'>
                 <h1 className='text-8'>Project Amenities</h1>
                 <div className='flex flex-col gap-5'>
                     <div className='flex items-center gap-3'>
@@ -374,7 +374,7 @@ const PlotDetails = () => {
                 </div>
             </div>
         </div>
-        <div className='flex laptop:flex-row mobile:flex-col gap-6 justify-center items-center laptop:pt-10 mobile:pt-9'>
+        <div className='flex laptop:flex-row mobile:flex-col laptop:gap-6 mobile:gap-4 justify-center mobile:pl-4 laptop:pt-9 mobile:pt-7'>
             <Link to='/submit'>
                 <button className='transition transform flex items-center gap-2 bg-orange-500 py-4 px-6 text-6 text-white rounded-5 hover:scale-105 shadow-lg border-0.5 border-red-300'><EmailIcon></EmailIcon>Shoot an Email</button>
             </Link>

@@ -16,10 +16,10 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Services = () => {
   return (
-    <div className='bg-[url("/seamless.png")] flex mobile:flex-col laptop:flex-row items-center laptop:p-10 mobile:p-4 gap-9 shadow-xl mobile:py-10'>
-        <div className='flex flex-col gap-7 flex-1'>
+    <div className='bg-[url("/seamless.png")] flex mobile:flex-col laptop:flex-row items-center laptop:p-10 mobile:p-4 gap-9 shadow-xl mobile:py-8'>
+        <div className='flex flex-col laptop:gap-7 mobile:gap-5 flex-1'>
             <div className=''>
-                <h1 className='laptop:text-9 mobile:text-8 laptop:text-left mobile:text-center'>What you looking for?</h1>
+                <h1 className='laptop:text-9 mobile:text-8 font-semibold laptop:text-left mobile:text-center'>Choose the service</h1>
             </div>
             <div className='flex flex-col gap-4 mobile:w-13 laptop:w-14'>
                 <Link to='/choosePlot'>
