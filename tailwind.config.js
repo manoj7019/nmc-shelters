@@ -17,6 +17,11 @@ export default {
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
+    // colors: {
+    //   'one': '#451859',
+    //   'two': '#f3953e',
+    //   'three': '#face48'
+    // },
     width: {
       '1': '4px',
       '2': '8px',
