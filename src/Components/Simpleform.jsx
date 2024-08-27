@@ -7,12 +7,12 @@ import { ThemeProvider } from 'styled-components';
 import AdsClickOutlinedIcon from '@mui/icons-material/AdsClickOutlined';
 import HangingGardens from '/hero11.jpg'
 import REXFelicity from '/hero10.avif'
-import Property3 from '/hero9.jpg'
-import Property4 from '/hero8.avif'
+import BrijTown from '/hero9.jpg'
+import DeoneInfra from '/hero8.avif'
 
 const theme = {
     background: '#f5f8fb',
-    fontFamily: 'Helvetica Neue',
+    fontFamily: 'sans-serif',
     headerBgColor: '#f97316',
     headerFontColor: '#fff',
     headerFontSize: '25px',
@@ -29,15 +29,15 @@ class Review extends Component {
     this.state = {
       name: '',
       service: '',
-      age: '',
+      property: '',
     };
   }
 
   componentWillMount() {
     const { steps } = this.props;
-    const { name, service, age } = steps;
+    const { name, service, property } = steps;
 
-    this.setState({ name, service, age });
+    this.setState({ name, service, property });
   }
 
   render() {
@@ -56,8 +56,8 @@ class Review extends Component {
               <td>{service.value}</td>
             </tr>
             <tr>
-              <td>Age</td>
-              <td>{age.value}</td>
+              <td>Property</td>
+              <td>{property.value}</td>
             </tr>
           </tbody>
         </table>
@@ -78,13 +78,14 @@ class SimpleForm extends Component {
   render() {
     return (
     <ThemeProvider theme={theme}>
-      <ChatBot
-        headerTitle="Namo 1.0"
+      <ChatBot className=''
+        headerTitle="Namo 1.0 "
+        botAvatar='/chatbot.gif'
         speechSynthesis={{ enable: true, lang: 'en' }}
         steps={[
           {
             id: '1',
-            message: "Hey! Welcome to NMC. I'm Namo 1.0 Your assistant. May I know your name?",
+            message: "Hey! Welcome to NMC. May I know your name?",
             trigger: 'name',
           },
           {
@@ -94,7 +95,7 @@ class SimpleForm extends Component {
           },
           {
             id: '3',
-            message: 'Hi {previousValue}! What you looking for?',
+            message: "Hi {previousValue}! I'm Namo 1.O. Your assistant. May I know what you looking for?",
             trigger: 'service',
           },
           {
@@ -118,8 +119,8 @@ class SimpleForm extends Component {
             options: [
               { value:'plot1', label:'Hanging Gardens', trigger: 'show-plot1'},
               { value:'plot2', label:'REX Felicity', trigger: 'show-plot2'},
-              { value:'plot3', label:'Property 3', trigger: 'show-plot3'},
-              { value:'plot4', label:'Property 4', trigger: 'show-plot4'},
+              { value:'plot3', label:'Brij Twon', trigger: 'show-plot3'},
+              { value:'plot4', label:'Deone Infrastructures', trigger: 'show-plot4'},
             ],
           },
           {
@@ -139,7 +140,7 @@ class SimpleForm extends Component {
             component: 
                 <Link to='/plotInfo'>
                     <div className='flex flex-col gap-2'>
-                        <h1 className='text-7'>REX Felicity</h1>
+                        <h1 className='text-7'>RAK Felicity</h1>
                         <img className='rounded-5' src={REXFelicity} alt="" />
                         <button className='text-5 text-white flex justify-center items-center bg-orange-500 gap-3 p-3 rounded-5'>Click to explore<AdsClickOutlinedIcon /></button>
                     </div>
@@ -151,8 +152,8 @@ class SimpleForm extends Component {
             component: 
                 <Link to='/plotInfo'>
                     <div className='flex flex-col gap-2'>
-                        <h1 className='text-7'>Property 3</h1>
-                        <img className='rounded-5' src={Property3} alt="" />
+                        <h1 className='text-7'>Brij Town</h1>
+                        <img className='rounded-5' src={BrijTown} alt="" />
                         <button className='text-5 text-white flex justify-center items-center bg-orange-500 gap-3 p-3 rounded-5'>Click to explore<AdsClickOutlinedIcon /></button>
                     </div>
                 </Link>,
@@ -163,8 +164,8 @@ class SimpleForm extends Component {
             component: 
                 <Link to='/plotInfo'>
                     <div className='flex flex-col gap-2'>
-                        <h1 className='text-7'>Property 4</h1>
-                        <img className='rounded-5' src={Property4} alt="" />
+                        <h1 className='text-7'>Deone Infrastructures</h1>
+                        <img className='rounded-5' src={DeoneInfra} alt="" />
                         <button className='text-5 text-white flex justify-center items-center bg-orange-500 gap-3 p-3 rounded-5'>Click to explore<AdsClickOutlinedIcon /></button>
                     </div>
                 </Link>,
@@ -175,119 +176,6 @@ class SimpleForm extends Component {
             message: 'Click on the property and close button to explore.',
             trigger: 'plot',
           },
-          
-        //   {
-        //     id: 'property',
-        //     validator: (value) => {
-        //         if(value == 'plot1') {
-        //             return (
-        //                 <Link to='/plotInfo'>
-        //                     <p>Hanging Gardens</p>
-        //                 </Link>
-        //             )
-        //         } else if(value == 'plot2') {
-        //             return (
-        //                 <Link to='/plotInfo'>
-        //                     <p>REX Felicity</p>
-        //                 </Link>
-        //             )
-        //         } else if(value == 'plot3') {
-        //             return (
-        //                 <Link to='/plotInfo'>
-        //                     <p>Property 3</p>
-        //                 </Link>
-        //             )
-        //         } else if(value == 'plot4') {
-        //             return (
-        //                 <Link to='/plotInfo'>
-        //                     <p>Property 4</p>
-        //                 </Link>
-        //             )
-        //         }
-        //         return true;
-        //     },
-        //     // component: (
-        //     //     <Link to='/plotInfo'>
-        //     //         <p>Hanging Gardens</p>
-        //     //     </Link>
-        //     // )
-        //   },
-        //   {
-        //     id: 'age',
-        //     user: true,
-        //     trigger: '7',
-        //     validator: (value) => {
-        //       if (isNaN(value)) {
-        //         return (
-        //             <Link to='/plotInfo'>
-        //                 <p>Hanging Gardens</p>
-        //             </Link>
-        //             )
-        //       } else if (value < 0) {
-        //         return 'value must be positive';
-        //       } else if (value > 120) {
-        //         return `${value}? Come on!`;
-        //       }
-
-        //       return true;
-        //     },
-        //   },
-        //   {
-        //     id: '7',
-        //     message: 'Great! Check out your summary',
-        //     trigger: 'review',
-        //   },
-        //   {
-        //     id: 'review',
-        //     component: <Review />,
-        //     asMessage: true,
-        //     trigger: 'update',
-        //   },
-        //   {
-        //     id: 'update',
-        //     message: 'Would you like to update some field?',
-        //     trigger: 'update-question',
-        //   },
-        //   {
-        //     id: 'update-question',
-        //     options: [
-        //       { value: 'yes', label: 'Yes', trigger: 'update-yes' },
-        //       { value: 'no', label: 'No', trigger: 'end-message' },
-        //     ],
-        //   },
-        //   {
-        //     id: 'update-yes',
-        //     message: 'What field would you like to update?',
-        //     trigger: 'update-fields',
-        //   },
-        //   {
-        //     id: 'update-fields',
-        //     options: [
-        //       { value: 'name', label: 'Name', trigger: 'update-name' },
-        //       { value: 'gender', label: 'Gender', trigger: 'update-gender' },
-        //       { value: 'age', label: 'Age', trigger: 'update-age' },
-        //     ],
-        //   },
-        //   {
-        //     id: 'update-name',
-        //     update: 'name',
-        //     trigger: '7',
-        //   },
-        //   {
-        //     id: 'update-gender',
-        //     update: 'gender',
-        //     trigger: '7',
-        //   },
-        //   {
-        //     id: 'update-age',
-        //     update: 'age',
-        //     trigger: '7',
-        //   },
-        //   {
-        //     id: 'end-message',
-        //     message: 'Thanks! Your data was submitted successfully!',
-        //     end: true,
-        //   },
         ]}
         floating={true}
       />

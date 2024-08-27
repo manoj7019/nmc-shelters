@@ -88,9 +88,9 @@ const PlotDetails = () => {
         <div className='flex laptop:flex-row mobile:flex-col laptop:p-7 mobile:p-4 laptop:gap-7 mobile:gap-6 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl'>
             <div className='flex flex-col flex-1'>
                 {/* <img className='-mb-36 ml-28 z-50 h-30 w-auto border-l-4 border-b-4 border-gray-50 rounded-tl-7 rounded-bl-7 rounded-tr-7 hover:scale-105 shadow-xl' src={Plot1a} alt="" /> */}
-                {/* <LazyLoadImage className='mobile:hidden laptop:h-10 laptop:w-12 transition transform -mb-8 ml-11 mr-7 z-50 border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot1a} alt="" /> */}
-                <LazyLoadImage className='laptop:h-15 mobile:h-13 w-14 rounded-7 shadow-xl border-1' src={Plot1} alt="" />
-                {/* <LazyLoadImage className='mobile:hidden laptop:h-11 laptop:w-11 transition transform -mt-12 mr-13 -ml-9 z-50 border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot2} alt="" /> */}
+                {/* <LazyLoadImage className='h-10 w-12 transition transform -mb-8 ml-11 mr-7 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot1a} alt="" /> */}
+                <LazyLoadImage className='h-13 w-14 rounded-7 shadow-xl border-1' src={Plot1} alt="" />
+                {/* <LazyLoadImage className='h-11 w-11 transition transform -mt-13 mr-13 -ml-9 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot2} alt="" /> */}
             </div>
             <div className='flex flex-col justify-center laptop:gap-7 mobile:gap-6 flex-1'>
                 <div className=''>

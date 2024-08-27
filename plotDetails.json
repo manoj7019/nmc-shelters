@@ -3,7 +3,7 @@
         {
             "id": "flat1",
             "title": "Hanging Gardens",
-            "img": "/card1.jpeg",
+            "img": "/card3.jpeg",
             "location": "Nagawara, Bengaluru",
             "school": "Amity University",
             "hospital": "3km, Manipal",
@@ -21,7 +21,7 @@
         {
             "id": "flat3",
             "title": "RAK Felicity",
-            "img": "/card3.jpeg",
+            "img": "/card4.jpeg",
             "location": "Devanahalli",
             "school": "R L Jalappa IT",
             "hospital": "2km, Manasa",
@@ -30,7 +30,7 @@
         {
             "id": "flat4",
             "title": "Deone Infrastructures",
-            "img": "/card4.jpeg",
+            "img": "/card1.jpeg",
             "location": "Nelamangala",
             "school": "Govt Primary",
             "hospital": "10km, Manipal",
