@@ -50,7 +50,7 @@ const Navbar = () => {
                 <p className='transition transform hover:scale-125 hover:text-orange-500'>Services</p>
             </Link>
             <Link to='/choosePlot'>
-                <p className='transition transform hover:scale-125 hover:text-orange-500'>Plots</p>
+                <p className='transition transform hover:scale-125 hover:text-orange-500'>Projects</p>
             </Link>
             <Link to='/plotInfo'>
                 <p className='transition transform hover:scale-125 hover:text-orange-500'>Blog</p>
@@ -73,12 +73,12 @@ const Navbar = () => {
   {showDropdown && 
               <div className='laptop:hidden mobile:absolute min-h-[100vh] left-0 top-[100%] w-full px-1'>
                   {/* <div className='flex flex-col flex-8 justify-between items-center bg-gray-50 gap-10 px-5 py-8 rounded-b-lg mx-2 z-50'> */}
-                  <div className='flex flex-col justify-between items-center gap-7 px-5 py-7 rounded-b-5 mx-2 z-50 bg-gray-50'>
+                  <div className='flex flex-col justify-between items-center gap-5 px-5 py-6 rounded-b-5 mx-2 z-50 bg-gray-50'>
                       <NavLink to='/' onClick={handleSetShowDropdown} className='flex items-center gap-1 px-4'>
                           <button className='text-6 flex items-center gap-2'>Services</button>
                       </NavLink>
                       <NavLink to='/choosePlot' onClick={handleSetShowDropdown} className='flex items-center gap-1 px-4'>
-                          <button className='text-6 flex items-center gap-2'>Plots</button>
+                          <button className='text-6 flex items-center gap-2'>Projects</button>
                       </NavLink>
                       <NavLink to='/plotInfo' onClick={handleSetShowDropdown} className='flex items-center gap-1 px-4'>
                           <button className='text-6 flex items-center gap-2'>Blog</button>

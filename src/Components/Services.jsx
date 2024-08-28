@@ -19,7 +19,7 @@ const Services = () => {
     <div className='bg-[url("/seamless.png")]'>
         <div className='flex flex-col gap-4 laptop:pt-10 mobile:pt-9 laptop:px-10 mobile:px-5'>
         <h1 className='laptop:text-10 mobile:text-8 font-bold leading-tight text-[#440859] laptop:text-center mobile:text-left'>Ready To Invest In Luxury Real Estate?<br /><span className='text-orange-500'>Start Here.</span> </h1>
-        <p className='laptop:px-10 mobile:px-0 laptop:text-center mobile:text-left laptop:text-7 mobile:text-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat officiis eius alias blanditiis.  aliquid mollitia voluptatibus ipsum.</p>
+        <p className='laptop:px-10 mobile:px-0 laptop:text-center mobile:text-left laptop:text-7 mobile:text-6'>You already know the power of real estate. We'll help you earn from it by making investment in a luxury projects.</p>
         </div>
         <img className='mt-6 mobile:w-14 mobile:h-12 laptop:w-20 laptop:h-16 laptop:-mt-11 mobile:mt-0' src={HeroImg2} alt="" />
         <div className='flex mobile:flex-col laptop:flex-row items-center laptop:p-10 mobile:p-4 gap-9 shadow-xl mobile:pt-7 mobile:pb-8'>

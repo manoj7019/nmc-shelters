@@ -96,7 +96,7 @@ const PlotDetails = () => {
             <div className='flex flex-col justify-center laptop:gap-7 mobile:gap-6 flex-1'>
                 <div className=''>
                     <h1 className='text-8'>RAK Felicity</h1>
-                    <p className='text-5 text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis maiores quibusdam, explicabo molestiae dicta quam.</p>
+                    <p className='text-5 text-gray-500'>A beautiful villa plot community in Devanahalli surrounded by Nature with delightful amenities. This plot by Vencer offers you RERA approved Villa plots.</p>
                 </div>
                 <div className='grid grid-cols-2 gap-6'>
                     <div className='flex flex-col gap-1'>
@@ -104,8 +104,8 @@ const PlotDetails = () => {
                             <LocationOnOutlinedIcon fontSize='large'></LocationOnOutlinedIcon>
                         </h1>
                         <div>
-                            <h2 className='text-5'>Nagawara, Bengaluru</h2>
-                            <p className='text-4 text-gray-500'>Lorem ipsum dolor, sit amet consectetur.</p>
+                            <h2 className='text-5'>Devanahalli, Bengaluru</h2>
+                            <p className='text-4 text-gray-500'>Very rapidly developing place.</p>
                         </div>
                     </div>
                     <div className='flex flex-col gap-1'>
@@ -113,8 +113,8 @@ const PlotDetails = () => {
                             <ApartmentIcon fontSize='large'></ApartmentIcon>
                         </h1>
                         <div>
-                            <h2 className='text-5'>50 - 60 <br />Flats</h2>
-                            <p className='text-4 text-gray-500'>Lorem ipsum dolor, sit amet consectetur.</p>
+                            <h2 className='text-5'>50 <br />Villa plots</h2>
+                            <p className='text-4 text-gray-500'>Limited and selling fast.</p>
                         </div>
                     </div>
                     <div className='flex flex-col gap-1'>
@@ -122,8 +122,8 @@ const PlotDetails = () => {
                             <CurrencyRupeeIcon fontSize='large'></CurrencyRupeeIcon>
                         </h1>
                         <div>
-                            <h2 className='text-5'>3.25Cr <br />Onwards</h2>
-                            <p className='text-4 text-gray-500'>Lorem ipsum dolor, sit amet consectetur.</p>
+                            <h2 className='text-5'>64 Lakh <br />Onwards</h2>
+                            <p className='text-4 text-gray-500'>Value for the price.</p>
                         </div>
                     </div>
                     <div className='flex flex-col gap-1'>
@@ -132,7 +132,7 @@ const PlotDetails = () => {
                         </h1>
                         <div>
                             <h2 className='text-5'>Kempegowda international</h2>
-                            <p className='text-4 text-gray-500'>Lorem ipsum dolor, sit amet consectetur.</p>
+                            <p className='text-4 text-gray-500'>Just 10km away.</p>
                         </div>
                     </div>
                 </div>
