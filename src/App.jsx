@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import PlotDetailsPage from './Pages/PlotDetailsPage';
+import PlotDetailsRAKPage from './Pages/PlotDetailsRAKPage';
 import SubmitPage from './Pages/SubmitPage';
 import SuccessPage from './Pages/SuccessPage';
 import ComingSoonPage from './Pages/ComingSoonPage';
@@ -18,6 +19,7 @@ const router = createBrowserRouter (
   <Route path='/' element={<MainLayout/>}>
     <Route index element={<HomePage/>}/>
     <Route path='/plotInfo' element={<PlotDetailsPage/>}/>
+    <Route path='/plotInfoRAK' element={<PlotDetailsRAKPage/>}/>
     <Route path='/choosePlot' element={<ChoosePlotPage/>}/>
     <Route path='/submit' element={<SubmitPage/>}/>
     <Route path='/success' element={<SuccessPage/>}/>

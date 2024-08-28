@@ -17,6 +17,7 @@ import AirlineStopsIcon from '@mui/icons-material/AirlineStops';
 import SchoolIcon from '@mui/icons-material/School';
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 import LandscapeIcon from '@mui/icons-material/Landscape';
+import RoomServiceIcon from '@mui/icons-material/RoomService';
 
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
@@ -88,13 +89,13 @@ const PlotDetails = () => {
         <div className='flex laptop:flex-row mobile:flex-col laptop:p-7 mobile:p-4 laptop:gap-7 mobile:gap-6 items-center rounded-8 border-0.5 border-white backdrop-blur-3xl'>
             <div className='flex flex-col flex-1'>
                 {/* <img className='-mb-36 ml-28 z-50 h-30 w-auto border-l-4 border-b-4 border-gray-50 rounded-tl-7 rounded-bl-7 rounded-tr-7 hover:scale-105 shadow-xl' src={Plot1a} alt="" /> */}
-                {/* <LazyLoadImage className='h-10 w-12 transition transform -mb-8 ml-11 mr-7 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot1a} alt="" /> */}
-                <LazyLoadImage className='h-13 w-14 rounded-7 shadow-xl border-1' src={Plot1} alt="" />
-                {/* <LazyLoadImage className='h-11 w-11 transition transform -mt-13 mr-13 -ml-9 z-50 h-30 w-auto border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot2} alt="" /> */}
+                {/* <LazyLoadImage className='mobile:hidden laptop:h-10 laptop:w-12 transition transform -mb-8 ml-11 mr-7 z-50 border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot1a} alt="" /> */}
+                <LazyLoadImage className='laptop:h-15 mobile:h-13 w-14 rounded-7 shadow-xl border-1' src={Plot1} alt="" />
+                {/* <LazyLoadImage className='mobile:hidden laptop:h-11 laptop:w-11 transition transform -mt-12 mr-13 -ml-9 z-50 border-gray-100 border-1 rounded-7 hover:scale-105 shadow-2xl' src={Plot2} alt="" /> */}
             </div>
             <div className='flex flex-col justify-center laptop:gap-7 mobile:gap-6 flex-1'>
                 <div className=''>
-                    <h1 className='text-8'>Hanging Gardens</h1>
+                    <h1 className='text-8'>RAK Felicity</h1>
                     <p className='text-5 text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veritatis maiores quibusdam, explicabo molestiae dicta quam.</p>
                 </div>
                 <div className='grid grid-cols-2 gap-6'>
@@ -146,12 +147,12 @@ const PlotDetails = () => {
             </div>
         </div>
         <div className='flex flex-col items-center laptop:gap-7 mobile:gap-5 laptop:mt-9 mobile:mt-6 mobile:p-4'>
-            <h1 className='laptop:text-9 mobile:text-8'>Club House Highlights</h1>
-            <div className='grid laptop:grid-cols-5 mobile:grid-cols-2 gap-6'>
+            <h1 className='laptop:text-9 mobile:text-7 mobile:font-medium mobile:text-left'>Club House Highlights</h1>
+            <div className='grid laptop:grid-cols-5 mobile:grid-cols-2 laptop:gap-6 mobile:gap-5'>
             {Plots.facility.map(facility =>
-                <div className='flex flex-col items-center transition transform hover:scale-110'>
+                <div className='flex flex-col items-center transition transform hover:scale-110 mobile:py-2'>
                     <img className='shadow-lg border-0.5 border-white rounded-5' src={facility.img} alt="" />
-                    <p className='-mt-7 text-white text-6 px-4 rounded-2 backdrop-blur bg-red-100/30'>{facility.title}</p>
+                    <p className='-mt-7 text-white laptop:text-6 mobile:text-4 px-4 rounded-2 backdrop-blur bg-red-100/30'>{facility.title}</p>
                 </div>
             )}
             </div>
@@ -162,17 +163,17 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                         <div onClick={handleSetShowMoreWork}
-                            className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                            className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-4 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <WorkIcon fontSize='large' /> Work Locations </button>
                             <KeyboardArrowDownIcon />
                         </div>
                         {showMoreWork && 
                         <>
-                            {Plots.nmenclaveWork.map(work =>
+                            {Plots.RAKWork.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
                                     <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time}</p>
+                                    <p className='laptop:text-4 mobile:text-3 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>
@@ -183,17 +184,17 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                     <div onClick={handleSetShowMoreConnectivity}
-                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-4 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
-                            <AirlineStopsIcon fontSize='large' /> Easy Connectivity </button>
+                            <RoomServiceIcon fontSize='large' /> Hotels & Restaurants </button>
                             <KeyboardArrowDownIcon />
                         </div>
                         {showMoreConnectivity && 
                         <>
-                            {Plots.nmenclaveConnectivity.map(work =>
+                            {Plots.RAKHotel.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
                                     <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time}</p>
+                                    <p className='laptop:text-4 mobile:text-3 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>
@@ -204,17 +205,17 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                         <div onClick={handleSetShowMoreEducation}
-                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-4 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <SchoolIcon fontSize='large' /> Educational Institutions </button>
                             <KeyboardArrowDownIcon />
                         </div>
                         {showMoreEducation && 
                         <>
-                            {Plots.nmenclaveEducation.map(work =>
+                            {Plots.RAKEducation.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
                                     <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time}</p>
+                                    <p className='laptop:text-4 mobile:text-3 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>
@@ -225,17 +226,17 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                         <div onClick={handleSetShowMoreHealth}
-                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-4 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <HealthAndSafetyIcon fontSize='large' /> Health Care </button>
                             <KeyboardArrowDownIcon />
                         </div>
                         {showMoreHealth && 
                         <>
-                            {Plots.nmenclaveHealth.map(work =>
+                            {Plots.RAKHealth.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
                                     <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time}</p>
+                                    <p className='laptop:text-4 mobile:text-3 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>
@@ -246,17 +247,17 @@ const PlotDetails = () => {
                 <div>
                     <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
                         <div onClick={handleSetShowMoreEnt}
-                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 px-6 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
+                         className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-4 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>
                             <LandscapeIcon fontSize='large' /> Entertainment</button>
                             <KeyboardArrowDownIcon />
                         </div>
                         {showMoreEnt && 
                         <>
-                            {Plots.nmenclaveEnt.map(work =>
+                            {Plots.RAKEnt.map(work =>
                                 <div className='px-5 flex items-baseline justify-between gap-6'>
                                     <p className='laptop:text-6 mobile:text-5'>{work.title}</p>
-                                    <p className='text-4 text-gray-500'>{work.time}</p>
+                                    <p className='laptop:text-4 mobile:text-3 text-gray-500'>{work.time}</p>
                                 </div>
                             )}
                         </>

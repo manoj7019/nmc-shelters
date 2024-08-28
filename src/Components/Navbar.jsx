@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '/finalLogo1.png'
+import Logo from '/nmclogo.svg'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className='top-0 inset-x-0 fixed z-50 flex justify-between items-center p-4 px-5 bg-gray-50/80 backdrop-blur'>
           <NavLink to='/'>
               <div className='transition transform flex items-end'>
-                  <img className='laptop:h-8 mobile:h-7' src={Logo} alt="" />
+                  <img className='laptop:h-8 mobile:h-6m' src={Logo} alt="" />
               </div>
           </NavLink>
 

@@ -7,7 +7,8 @@
             "location": "Nagawara, Bengaluru",
             "school": "Amity University",
             "hospital": "3km, Manipal",
-            "airport": "5km"
+            "airport": "5km",
+            "link": "/plotInfo"
         },
         {
             "id": "flat2",
@@ -16,7 +17,8 @@
             "location": "Devanahalli",
             "school": "Harrow International",
             "hospital": "4km, We Care",
-            "airport": "4km"
+            "airport": "4km",
+            "link": "/plotInfoRAK"
         },
         {
             "id": "flat3",
@@ -25,7 +27,8 @@
             "location": "Devanahalli",
             "school": "R L Jalappa IT",
             "hospital": "2km, Manasa",
-            "airport": "6km"
+            "airport": "6km",
+            "link": "/plotInfoRAK"
         },
         {
             "id": "flat4",
@@ -34,7 +37,8 @@
             "location": "Nelamangala",
             "school": "Govt Primary",
             "hospital": "10km, Manipal",
-            "airport": "2km"
+            "airport": "2km",
+            "link": "/plotInfo"
         }
     ],
     "facility" : [
@@ -114,7 +118,7 @@
         },
         {
             "id" : "work2",
-            "title" : "Kirloskar Business Park",
+            "title" : "Kirloskar Park",
             "time" : "25 min"
         },
         {
@@ -136,6 +140,24 @@
             "id" : "work6",
             "title" : "Manyatha Tech Park",
             "time" : "33 min"
+        }
+    ],
+
+    "RAKWork" : [
+        {
+            "id" : "work1",
+            "title" : "KIADB Hardware Park",
+            "time" : "24 min"
+        },
+        {
+            "id" : "work2",
+            "title" : "Prestige Tech Cloud Park",
+            "time" : "25 min"
+        },
+        {
+            "id" : "work3",
+            "title" : "KIADB Aerospace SEZ",
+            "time" : "27 min"
         }
     ],
 
@@ -166,6 +188,23 @@
             "time" : "45 min"
         }
     ],
+    "RAKHotel" : [
+        {
+            "id" : "hotel1",
+            "title" : "The Arab Restaurant",
+            "time" : "1 km"
+        },
+        {
+            "id" : "hotel2",
+            "title" : "The Green House Restaurant",
+            "time" : "3.9 km"
+        },
+        {
+            "id" : "hotel3",
+            "title" : "JW MArriott Resort Hotel Spa",
+            "time" : "5.8 km"
+        }
+    ],
     "nmenclaveEducation" : [
         {
             "id" : "education1",
@@ -184,7 +223,7 @@
         },
         {
             "id" : "education4",
-            "title" : "Akash International School",
+            "title" : "Akash International",
             "time" : "5 min"
         },
         {
@@ -198,15 +237,32 @@
             "time" : "30 min"
         }
     ],
+    "RAKEducation" : [
+        {
+            "id" : "education1",
+            "title" : "Chanakya University",
+            "time" : "5.4 km"
+        },
+        {
+            "id" : "education2",
+            "title" : "Gnanasagara school",
+            "time" : "3.6 km"
+        },
+        {
+            "id" : "education3",
+            "title" : "MVM Central School",
+            "time" : "10 km"
+        }
+    ],
     "nmenclaveHealth" : [
         {
             "id" : "health1",
-            "title" : "Akash Multi Speciality Hospital",
+            "title" : "Akash Multi Speciality",
             "time" : "5 min"
         },
         {
             "id" : "health2",
-            "title" : "Citecare Cancer Hospital",
+            "title" : "Citecare Cancer",
             "time" : "23 min"
         },
         {
@@ -221,15 +277,33 @@
         },
         {
             "id" : "health5",
-            "title" : "Bangalore Baptist Hospital",
+            "title" : "Bangalore Baptist",
             "time" : "33 min"
         },
         {
             "id" : "health6",
-            "title" : "Ramaiah Leena Hospital",
+            "title" : "Ramaiah Leena",
             "time" : "2 min"
         }
     ],
+    "RAKHealth" : [
+        {
+            "id" : "health1",
+            "title" : "New Manasa Hospital",
+            "time" : "2.1 km"
+        },
+        {
+            "id" : "health2",
+            "title" : "Devanahalli Health Services",
+            "time" : "3.1 km"
+        },
+        {
+            "id" : "health3",
+            "title" : "Ramaiah Leena",
+            "time" : "3.1 km"
+        }
+    ],
+
     "nmenclaveEnt" : [
         {
             "id" : "ent1",
@@ -265,6 +339,23 @@
             "id" : "ent7",
             "title" : "Phoenix Mall of India",
             "time" : "20 min"
+        }
+    ],
+    "RAKEnt" : [
+        {
+            "id" : "ent1",
+            "title" : "Chairman's Resort",
+            "time" : "5 min"
+        },
+        {
+            "id" : "ent2",
+            "title" : "Fantasy Golf Resort",
+            "time" : "15 min"
+        },
+        {
+            "id" : "ent3",
+            "title" : "Signature Club Resort",
+            "time" : "23 min"
         }
     ]
 }

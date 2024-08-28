@@ -60,7 +60,7 @@ const Footer = () => {
                 </a>
             </div>
         </div>
-        <p className='text-center bg-[#440859] text-gray-300 p-2 border-t-0.5 border-gray-700'>
+        <p className='mobile:text-3 laptop:text-4 text-center bg-[#440859] text-gray-300 p-2 border-t-0.5 border-gray-700'>
             &copy; {year} Namochetana India Pvt. Ltd. All rights reserved.
         </p>
     </div>

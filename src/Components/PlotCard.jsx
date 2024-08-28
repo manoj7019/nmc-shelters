@@ -13,8 +13,8 @@ const PlotCard = () => {
   return (
       <div className='grid laptop:grid-cols-2 mobile:grid-cols-1 gap-7'>
       {Plots.plots.map(plot =>
-      <Link to='/plotInfo'>
-      <div className='transition transform flex flex-col p-4 rounded-6 border-0.5 border-white bg-white shadow-xl gap-4 hover:scale-105'>
+      <Link to={plot.link}>
+      <div className='transition transform flex flex-col p-4 rounded-6 border-0.5 border-white bg-white shadow-xl gap-4 laptop:hover:scale-105'>
         <>
             <LazyLoadImage className='rounded-5 w-13 h-12' key={plot.id} src={plot.img} alt="" />
             <div className='flex flex-col gap-3'>
