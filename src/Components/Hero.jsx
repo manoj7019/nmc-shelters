@@ -25,7 +25,7 @@ const Hero = () => {
         </div> */}
 
         <div className='laptop:-mt-11 mobile:-mt-9 pt-8'>
-            <LazyLoadImage src={HeroImg} alt="" className='w-17 h-17' />
+            <LazyLoadImage src={HeroImg} alt="" className='mobile:w-14 mobile:h-12 laptop:w-20 laptop:h-16' />
         </div>
 
         {/* <LazyLoadImage src={PinImg} alt="" className='laptop:h-13 mobile:h-10 laptop:-mt-14 mobile:-mt-11' /> */}
