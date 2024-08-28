@@ -5,7 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import LogoW from '/logowhite.png'
+import LogoW from '/nmclogoWhite.png'
 
 const Footer = () => {
     const year = new Date().getFullYear()

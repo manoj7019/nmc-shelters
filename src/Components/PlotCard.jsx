@@ -1,5 +1,5 @@
 import React from 'react'
-import PlotImg from '/plot4.jpg'
+import PlotImg from '/plot3.jpg'
 import Plots from '../../plotDetails.json'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import LocalHospitalOutlinedIcon from '@mui/icons-material/LocalHospitalOutlined';
@@ -16,7 +16,7 @@ const PlotCard = () => {
       <Link to={plot.link}>
       <div className='transition transform flex flex-col p-4 rounded-6 border-0.5 border-white bg-white shadow-xl gap-4 laptop:hover:scale-105'>
         <>
-            <LazyLoadImage className='rounded-5 w-13 h-12' key={plot.id} src={plot.img} alt="" />
+            <img className='rounded-5 w-13 h-12' key={plot.id} src={plot.img} alt="" />
             <div className='flex flex-col gap-3'>
                 <h3 className='text-6 font-bold'>{plot.title}</h3>
                 <div className='flex flex-col gap-2'>
