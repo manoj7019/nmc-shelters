@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '/nmclogo.svg'
+import Logo from '/nmclogo.png'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react'

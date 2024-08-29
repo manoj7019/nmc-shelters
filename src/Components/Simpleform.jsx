@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import AdsClickOutlinedIcon from '@mui/icons-material/AdsClickOutlined';
-import HangingGardens from '/hero11.jpg'
+import NMEnclave from '/hero11.jpg'
 import REXFelicity from '/hero10.avif'
 import BrijTown from '/hero9.jpg'
 import DeoneInfra from '/hero8.avif'
@@ -117,7 +117,7 @@ class SimpleForm extends Component {
           {
             id: 'plot',
             options: [
-              { value:'plot1', label:'Hanging Gardens', trigger: 'show-plot1'},
+              { value:'plot1', label:'NM Enclave', trigger: 'show-plot1'},
               { value:'plot2', label:'REX Felicity', trigger: 'show-plot2'},
               { value:'plot3', label:'Brij Twon', trigger: 'show-plot3'},
               { value:'plot4', label:'Deone Infrastructures', trigger: 'show-plot4'},
@@ -128,8 +128,8 @@ class SimpleForm extends Component {
             component: 
                 <Link to='/plotInfo'>
                     <div className='flex flex-col gap-2'>
-                        <h1 className='text-7'>Hanging Gardens</h1>
-                        <img className='rounded-5' src={HangingGardens} alt="" />
+                        <h1 className='text-7'>NM Enclave</h1>
+                        <img className='rounded-5' src={NMEnclave} alt="" />
                         <button className='text-5 text-white flex justify-center items-center bg-orange-500 gap-3 p-3 rounded-5'>Click to explore<AdsClickOutlinedIcon /></button>
                     </div>
                 </Link>,
