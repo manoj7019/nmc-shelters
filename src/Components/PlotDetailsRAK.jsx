@@ -98,7 +98,7 @@ const PlotDetails = () => {
                     <h1 className='text-8'>RAK Felicity</h1>
                     <p className='text-5 text-gray-500'>A beautiful villa plot community in Devanahalli surrounded by Nature with delightful amenities. This plot by Vencer offers you RERA approved Villa plots.</p>
                 </div>
-                <div className='grid grid-cols-2 gap-6'>
+                <div className='grid laptop:grid-cols-2 tablet:grid-cols-4 mobile:grid-cols-2 gap-6'>
                     <div className='flex flex-col gap-1'>
                         <h1 className='text-orange-500'>
                             <LocationOnOutlinedIcon fontSize='large'></LocationOnOutlinedIcon>
@@ -148,7 +148,7 @@ const PlotDetails = () => {
         </div>
         <div className='flex flex-col items-center laptop:gap-7 mobile:gap-5 laptop:mt-9 mobile:mt-6 mobile:p-4'>
             <h1 className='laptop:text-9 mobile:text-7 mobile:font-medium mobile:text-left'>Club House Highlights</h1>
-            <div className='grid laptop:grid-cols-5 mobile:grid-cols-2 laptop:gap-6 mobile:gap-5'>
+            <div className='grid laptop:grid-cols-5 tablet:grid-cols-5 mobile:grid-cols-2 laptop:gap-6 mobile:gap-5'>
             {Plots.facility.map(facility =>
                 <div className='flex flex-col items-center transition transform hover:scale-110 mobile:py-2'>
                     <img className='shadow-lg border-0.5 border-white rounded-5' src={facility.img} alt="" />
@@ -157,11 +157,11 @@ const PlotDetails = () => {
             )}
             </div>
         </div>
-        <div className='flex laptop:flex-row mobile:flex-col justify-between laptop:px-10 mobile:px-4 mt-6'>
+        <div className='flex laptop:flex-row tablet:flex-row mobile:flex-col justify-between laptop:px-10 mobile:px-4 mt-6'>
             <div className='flex flex-col gap-6 laptop:mt-9 mobile:mt-6'>
                 <h1 className='text-8'>Project Highlights</h1>
                 <div>
-                    <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full'>
+                    <div className='flex flex-col gap-4 laptop:w-14 tablet:w-13 mobile:w-full'>
                         <div onClick={handleSetShowMoreWork}
                             className='bg-gray-100 transition transform backdrop-blur flex justify-between items-center py-4 laptop:px-6 mobile:px-4 laptop:text-6 mobile:text-5 rounded-5 border-0.5 border-gray-200 hover:scale-110 hover:bg-orange-500 hover:text-white'>
                             <button className='flex items-center gap-3'>

@@ -111,7 +111,7 @@ class SimpleForm extends Component {
           },
           {
             id: '5',
-            message: 'Great! Please select the plot below',
+            message: 'Great! Please select the project below',
             trigger: 'plot',
           },
           {
@@ -173,7 +173,7 @@ class SimpleForm extends Component {
           },
           {
             id: 'explore',
-            message: 'Click on the property and close button to explore.',
+            message: 'Click on the project and close button to explore.',
             trigger: 'plot',
           },
         ]}

@@ -18,8 +18,8 @@ const PlotCards = () => {
         <div className='flex laptop:flex-row mobile:flex-col laptop:gap-10 mobile:gap-5'>
           <div className='flex flex-col laptop:gap-6 mobile:gap-4'>
             <div className='flex flex-col mobile:p-2'>
-              <h1 className='text-[#440859] font-bold laptop:text-9 mobile:text-8 mobile:pr-8 mobile:leading-tight'>Please choose your plot below</h1>
-              <p className='text-6 mobile:text-5 py-4 text-gray-500'>Here are our ongoing projects to invest for your better future. </p>
+              <h1 className='text-[#440859] font-bold laptop:text-9 mobile:text-8 tablet:text-9 mobile:pr-8 mobile:leading-tight'>Please choose your plot below</h1>
+              <p className='text-6 mobile:text-5 tablet:text-6 py-4 text-gray-500'>Here are our ongoing projects to invest for your better future. </p>
             </div>
               <PlotCard />
           </div>

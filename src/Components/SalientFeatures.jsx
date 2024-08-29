@@ -9,7 +9,7 @@ const SalientFeatures = () => {
         {PlotDetails.salientFeatures.map(salientFeature => 
             <div className='flex flex-col items-center'>
                 <img className='rounded-4 laptop:h-9 laptop:w-9 mobile:h-8 mobile:w-8' key={salientFeature.id} src={salientFeature.img} alt="" />
-                <p className='laptop:text-4 mobile:text-3 mobile:leading-5 laptop:leading-7 p-2 text-center'>{salientFeature.title}</p>
+                <p className='laptop:text-4 tablet:text-4 mobile:text-3 mobile:leading-5 laptop:leading-7 p-2 text-center'>{salientFeature.title}</p>
             </div>
         )}
         </div>

@@ -13,6 +13,8 @@ import SuccessPage from './Pages/SuccessPage';
 import ComingSoonPage from './Pages/ComingSoonPage';
 import MainLayout from './Layouts/MainLayout';
 import ChoosePlotPage from './Pages/ChoosePlotPage';
+import AboutPage from './Pages/AboutPage';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
 
 const router = createBrowserRouter (
   createRoutesFromElements(
@@ -21,8 +23,10 @@ const router = createBrowserRouter (
     <Route path='/plotInfo' element={<PlotDetailsPage/>}/>
     <Route path='/plotInfoRAK' element={<PlotDetailsRAKPage/>}/>
     <Route path='/choosePlot' element={<ChoosePlotPage/>}/>
+    <Route path='/about' element={<AboutPage/>}/>
     <Route path='/submit' element={<SubmitPage/>}/>
     <Route path='/success' element={<SuccessPage/>}/>
+    <Route path='/privacy' element={<PrivacyPolicy/>}/>
     <Route path='*' element={<ComingSoonPage/>}/>
   </Route>
   )

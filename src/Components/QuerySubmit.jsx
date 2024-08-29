@@ -52,7 +52,7 @@ const QuerySubmit = () => {
     
   return (
     <>
-    <div className='bg-[url("/seamless.png")] flex flex-col gap-6 justify-center items-center laptop:p-9 mobile:p-4 mobile:py-8'>
+    <div className='bg-[url("/seamless.png")] flex flex-col gap-6 justify-center items-center laptop:p-9 mobile:p-4 mobile:py-8 tablet:pb-12'>
         {/* <h1 className='text-8'>Get in Touch with us.</h1> */}
         <form action="/success" onSubmit={getData}>
             <div className='flex flex-col gap-4 laptop:w-14 mobile:w-full mt-8 laptop:p-6 mobile:p-4 rounded-4 shadow-xl bg-white'>
@@ -100,7 +100,7 @@ const QuerySubmit = () => {
                     value={user.Subscribe}
                     onChange={data}
                 />
-                <p>Subscribe to the latest Real Estate updates</p>
+                <p className='laptop:text-4 mobile:text-3'>Subscribe to the latest Real Estate updates</p>
             </div>
             <button
              className='transition transform bg-orange-500 mt-5 py-2 px-6 text-6 text-white rounded-3 hover:scale-105 shadow-lg border-0.5 border-red-300'>Submit</button>

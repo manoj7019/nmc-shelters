@@ -11,12 +11,12 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const PlotCard = () => {
   return (
-      <div className='grid laptop:grid-cols-2 mobile:grid-cols-1 gap-7'>
+      <div className='grid laptop:grid-cols-2 mobile:grid-cols-1 tablet:grid-cols-2 laptop:gap-7 tablet:gap-6 mobile:gap-7'>
       {Plots.plots.map(plot =>
       <Link to={plot.link}>
       <div className='transition transform flex flex-col p-4 rounded-6 border-0.5 border-white bg-white shadow-xl gap-4 laptop:hover:scale-105'>
         <>
-            <img className='rounded-5 w-13 h-12' key={plot.id} src={plot.img} alt="" />
+            <img className='rounded-5 w-full' key={plot.id} src={plot.img} alt="" />
             <div className='flex flex-col gap-3'>
                 <h3 className='text-6 font-bold'>{plot.title}</h3>
                 <div className='flex flex-col gap-2'>

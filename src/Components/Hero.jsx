@@ -13,7 +13,7 @@ const Hero = () => {
     <div className='bg-[url("/seamless.png")] flex flex-col justify-between items-center laptop:px-10 mobile:px-5 laptop:mb-11 mobile:mb-8'>
         <div className='flex flex-col laptop:mt-6 gap-7'>
             <div className='flex flex-col gap-4'>
-                <h1 className='text-[#440859] laptop:text-11 mobile:text-8 font-bold leading-tight text-left'>Own a plot at a <span className='text-orange-500'>premium location </span>now!</h1>
+                <h1 className='text-[#440859] laptop:text-11 tablet:text-10 mobile:text-8 font-bold leading-tight text-left'>Own a plot at a <span className='text-orange-500'>premium location </span>now!</h1>
                 {/* <p className='text-7 leading-9'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa eligendi doloribus corporis vero dignissimos iusto laboriosam assumenda et sunt?</p> */}
             </div>
         </div>
@@ -25,7 +25,7 @@ const Hero = () => {
         </div> */}
 
         <div className='laptop:-mt-11 mobile:-mt-9 pt-8'>
-            <img src={HeroImg} alt="" className='mobile:w-14 mobile:h-12 laptop:w-20 laptop:h-16' />
+            <img src={HeroImg} alt="" className='mobile:w-14 mobile:h-12 laptop:w-20 laptop:h-16 tablet:w-16 tablet:h-14' />
         </div>
 
         {/* <LazyLoadImage src={PinImg} alt="" className='laptop:h-13 mobile:h-10 laptop:-mt-14 mobile:-mt-11' /> */}
