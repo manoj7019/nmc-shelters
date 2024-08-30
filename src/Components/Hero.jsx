@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import Herogif1 from '/herogif1.gif'
 import Herogif2 from '/herogif2.gif'
 import Herogif3 from '/herogif3.gif'
+import ImageComponent from './ImageComponent';
 
 const Hero = () => {
   return (

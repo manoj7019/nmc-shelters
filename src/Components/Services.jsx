@@ -29,7 +29,7 @@ import ImageComponent from './ImageComponent';
 const Services = () => {
 
     // const imageSrc = '/hero005.png'
-    const imageSrc = '/hero005.png'
+    const imageSrc = '/hero007.png'
 
   return (
     <div className='bg-[url("/seamless.png")]'>
@@ -38,7 +38,7 @@ const Services = () => {
         <p className='laptop:px-10 mobile:px-0 laptop:text-center mobile:text-left laptop:text-7 tablet:text-7 mobile:text-6'>You already know the power of real estate. We'll help you earn from it by making investment in a luxury projects.</p>
         </div>
         <div className='mobile:hidden laptop:flex'>
-            <img src={imageSrc} className='mt-6 mobile:w-14 mobile:h-12 tablet:w-full tablet:h-14 laptop:w-20 laptop:h-16 laptop:-mt-11 mobile:mt-0' alt="" />
+            <img src={imageSrc} className='mt-6 mobile:w-14 mobile:h-12 tablet:w-full tablet:h-14 laptop:w-full laptop:h-16 laptop:-mt-10 mobile:mt-0' alt="" />
         </div>
         <div className='laptop:hidden'>
             <ImageComponent src={imageSrc} />
@@ -90,20 +90,20 @@ const Services = () => {
             {/* <div className='mobile:hidden laptop:flex items-center flex-1 gap-9 p-5'> */}
             <div className='flex items-center flex-1 laptop:gap-9 mobile:gap-4 laptop:p-5 mobile:p-4'>
                 <div className='flex flex-col mobile:gap-4 laptop:gap-8'>
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services0} alt="" />
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services1} alt="" />
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services7} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services0} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services1} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services7} alt="" />
                 </div>
                 <div className='flex flex-col mobile:gap-4 laptop:gap-8'>
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services2} alt="" />
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services3} alt="" />
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services4} alt="" />
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services8} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services2} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services3} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services4} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services8} alt="" />
                 </div>
                 <div className='flex flex-col mobile:gap-4 laptop:gap-8'>
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services5} alt="" />
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services6} alt="" />
-                    <LazyLoadImage className='w-9 rounded-5 border-1 border-white' src={Services9} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services5} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services6} alt="" />
+                    <img className='w-9 rounded-5 border-1 border-white' src={Services9} alt="" />
                 </div>
             </div>
         </div>

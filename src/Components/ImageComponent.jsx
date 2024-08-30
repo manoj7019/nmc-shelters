@@ -13,11 +13,11 @@ const ImageComponent = ({src}) => {
     }, [src])
   return (
     <div>
-            <div className='mt-6 mobile:w-14 mobile:h-12 tablet:w-full tablet:h-14 laptop:w-20 laptop:h-16 laptop:-mt-11 mobile:mt-0' style={{ display: imageLoaded ? 'none' : 'inline'}}>
+            <div className='mobile:w-14 mobile:h-12 tablet:w-full tablet:h-14 laptop:w-20 laptop:h-16 laptop:-mt-11 mobile:mt-0' style={{ display: imageLoaded ? 'none' : 'inline'}}>
                 <Blurhash
-                hash = 'LuM*aENdM_oz~qxDNGf6%0Sgxae:'
-                width = {500}
-                height = {300}
+                hash = 'LiPs-SkC?boL^+f7Rjj[_NayMxkC'
+                width = {420}
+                height = {250}
                 resolutionX={32}
                 resolutionY={32}
                 punch = {1}
@@ -25,7 +25,7 @@ const ImageComponent = ({src}) => {
             </div>
 
             <img
-            className='mt-6 mobile:w-14 mobile:h-12 tablet:w-full tablet:h-14 laptop:w-20 laptop:h-16 laptop:-mt-11 mobile:mt-0' src={src} alt=""
+            className='mobile:w-14 mobile:h-12 tablet:w-full tablet:h-14 laptop:w-20 laptop:h-16 laptop:-mt-11 mobile:mt-0' src={src} alt=""
                 style={{display: !imageLoaded ? 'none' : 'inline'}} />
     </div>
   )
