@@ -8,6 +8,9 @@ import Footer from '../Components/Footer'
 import Hero from '../Components/Hero'
 
 const HomePage = () => {
+   
+  const imageSrc = '/hero005.png'
+
   return (
     <div>
       <Services />

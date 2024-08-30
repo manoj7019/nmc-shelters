@@ -24,15 +24,25 @@ import Services7 from '/services7.gif'
 import Services8 from '/services8.gif'
 import Services9 from '/services9.gif'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import ImageComponent from './ImageComponent';
 
 const Services = () => {
+
+    // const imageSrc = '/hero005.png'
+    const imageSrc = '/hero005.png'
+
   return (
     <div className='bg-[url("/seamless.png")]'>
         <div className='flex flex-col gap-4 laptop:pt-10 mobile:pt-9 laptop:px-10 mobile:px-5'>
         <h1 className='laptop:text-10 tablet:text-9 mobile:text-8 font-bold leading-tight text-[#440859] laptop:text-center mobile:text-left'>Ready To Invest In Luxury Real Estate?<span className='text-orange-500'> Start Here.</span> </h1>
         <p className='laptop:px-10 mobile:px-0 laptop:text-center mobile:text-left laptop:text-7 tablet:text-7 mobile:text-6'>You already know the power of real estate. We'll help you earn from it by making investment in a luxury projects.</p>
         </div>
-        <img className='mt-6 mobile:w-14 mobile:h-12 tablet:w-full tablet:h-14 laptop:w-20 laptop:h-16 laptop:-mt-11 mobile:mt-0' src={HeroImg2} alt="" />
+        <div className='mobile:hidden laptop:flex'>
+            <img src={imageSrc} className='mt-6 mobile:w-14 mobile:h-12 tablet:w-full tablet:h-14 laptop:w-20 laptop:h-16 laptop:-mt-11 mobile:mt-0' alt="" />
+        </div>
+        <div className='laptop:hidden'>
+            <ImageComponent src={imageSrc} />
+        </div>
         <div className='flex mobile:flex-col laptop:flex-row tablet:flex-row items-center laptop:p-10 mobile:p-4 laptop:gap-9 mobile:gap-6 laptop:shadow-xl mobile:pt-7 mobile:pb-8'>
             <div className='flex flex-col laptop:gap-7 mobile:gap-5 flex-1 mobile:px-5'>
                 <div className=''>
