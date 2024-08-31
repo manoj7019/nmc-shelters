@@ -6,6 +6,7 @@ import Services from '../Components/Services'
 import QuerySubmit from '../Components/QuerySubmit'
 import Footer from '../Components/Footer'
 import Hero from '../Components/Hero'
+import ImageSlider from '../Components/ImageSlider'
 
 const HomePage = () => {
    

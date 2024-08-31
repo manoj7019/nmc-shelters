@@ -49,6 +49,7 @@ import ParkIcon from '@mui/icons-material/Park';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
 import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
+import ImageSlider from './ImageSlider'
 
 import { useState, useEffect } from 'react'
 // import Plots from '../../plotDetails.json'
@@ -145,6 +146,7 @@ const PlotDetails = () => {
                 </div>
             </div>
         </div>
+        <ImageSlider />
         <div className='flex flex-col items-center laptop:gap-7 mobile:gap-5 laptop:mt-9 mobile:mt-6 mobile:p-4'>
             <h1 className='laptop:text-9 mobile:text-7 mobile:font-medium mobile:text-left'>Club House Highlights</h1>
             <div className='grid laptop:grid-cols-5 tablet:grid-cols-5 mobile:grid-cols-2 laptop:gap-6 mobile:gap-5'>
